@@ -45,16 +45,91 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Отзывы</h1>
-      <div class="page-context">
-        <p class="page-context__title">
+      <div class="context">
+        <p class="context__title">
           Оставьте свой отзыв
         </p>
-        <p class="page-context__text">
+        <p class="context__description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
-      <section class="feedback-form">
+      <section class="feedback">
         <h2 class="visually-hidden">Оставьте свой отзыв</h2>
+        <form action="https://echo.htmlacademy.ru" class="feedback__form review" method="GET" autocomplete="off">
+          <fieldset class="review__personal-info review-section">
+            <legend class="review-section__title">Представьтесь:</legend>
+            <label class="review-section__label">
+              Имя*:
+              <input class="review-section__input" type="text" name="name" placeholder="Петр" />
+            </label>
+            <label class="review-section__label">
+              Фамилия*:
+              <input class="review-section__input" type="text" name="surname" placeholder="Иванов" />
+            </label>
+            <label class="review-section__label">
+              Отчество:
+              <input class="review-section__input" type="text" name="middle_name" placeholder="Александрович" />
+            </label>
+          </fieldset>
+          <fieldset class="review__contacts review-section">
+            <legend class="review-section__title">Контактная информация:</legend>
+            <label class="review-section__label">
+              Контактный телефон*:
+              <input class="review-section__input" type="tel" name="phone" placeholder="Введите телефон" />
+            </label>
+            <label class="review-section__label">
+              Электронная почта*:
+              <input class="review-section__input" type="email" name="email" placeholder="Введите e-mail" />
+            </label>
+          </fieldset>
+          <fieldset class="review__impressions review-section">
+            <legend class="review-section__title">Ваше Общее впечатление:</legend>
+            <label class="review-section__label">
+              Скорее положительное
+              <input class="review-section__radio" type="radio" name="positive" value="positive" checked />
+            </label>
+            <label class="review-section__label">
+              Скорее отрицательное
+              <input class="review-section__radio" type="radio" name="negative" value="negative" />
+            </label>
+            <label class="review-section__label">
+              Затрудняюсь ответить
+              <input class="review-section__radio" type="radio" name="neutral" value="neutral" />
+            </label>
+          </fieldset>
+          <fieldset class="review__sightseeing review-section">
+            <legend class="review-section__title">посещенные достопримечательности:</legend>
+            <label class="review-section__label">
+              Мост Дьявола
+              <input class="review-section__checkbox" type="checkbox" name="devil_bridge" checked />
+            </label>
+            <label class="review__box-label">
+              Гора-Колокол
+              <input class="review-section__checkbox" type="checkbox" name="bell_mountain" checked />
+            </label>
+            <label class="review__box-label">
+              Слайд-парк
+              <input class="review-section__checkbox" type="checkbox" name="side_park" checked />
+            </label>
+            <label class="review__box-label">
+              Красные скалы
+              <input class="review-section__checkbox" type="checkbox" name="red_rocks" />
+            </label>
+          </fieldset>
+          <fieldset class="review__text review-section">
+            <legend class="review-section__title">Опишите свои эмоции:</legend>
+            <label for="review-text" class="review-section__label visually-hidden">
+              Поле для текста отзыва
+            </label>
+            <textarea
+              class="review-section__textarea"
+              id="review-text"
+              name="review-text"
+              placeholder="Опишите подробно все свои восторги "
+            ></textarea>
+          </fieldset>
+          <button class="review__button button" type="submit">Отправить отзыв</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
