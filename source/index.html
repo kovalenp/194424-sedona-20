@@ -1,12 +1,145 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Логотип Седона" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <img src="./img/svg/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__menu site-list">
+            <li class="site-list__item site-list__item--close-button">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-intro">
+        <div class="page-intro__background">
+          <img src="./img/back-mobile.jpg" alt="Фон" />
+        </div>
+        <div class="page-intro__logo page-intro__logo--full">
+          <img src="./img/svg/text-intro-full.svg" alt="Интро-текст" />
+        </div>
+        <div class="page-intro__mask"></div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+      <div class="page-context">
+        <p class="page-context__title">
+          СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="page-context__text">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </div>
+      <section class="reasons">
+        <h2 class="visually-hidden">Причины по которым Седона крутая</h2>
+        <div class="reasons-wrapper">
+          <div class="reasons__item reason reason--highlight">
+            <h3 class="reason__title">Настоящий городок</h3>
+            <p class="reason__count">— №1 —</p>
+            <p class="reason__description">
+              Седона не аттракцион для туристов, там течёт своя жизнь
+            </p>
+            <img class="reason__img" src="./img/photo-city@1x1.jpg" alt="Фото городок" />
+          </div>
+          <ul class="reasons__list feature">
+            <li class="feature__item feature__item--living">
+              <h3 class="feature__title">Жильё</h3>
+              <p class="feature__description">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
+            </li>
+            <li class="feature__item feature__item--gifts">
+              <h3 class="feature__title">Сувениры</h3>
+              <p class="feature__description">
+                Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="feature__item feature__item--food">
+              <h3 class="feature__title">Еда</h3>
+              <p class="feature__description">
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
+          <div class="reasons__item reason reason--highlight">
+            <h3 class="reason__title">Там есть Мост дьявола</h3>
+            <p class="reason__count">— №2 —</p>
+            <p class="reason__description">
+              Да, по нему можно пройти! Если вы осмелитесь, конечно
+            </p>
+            <img class="reason__img" src="./img/photo-bridge@1x1.jpg" alt="Фото Мост Дьявола" />
+          </div>
+          <div class="reasons__item reason">
+            <h3 class="reason__title">Небольшая площадь</h3>
+            <p class="reason__count">— №3 —</p>
+            <p class="reason__description">
+              Все достопримечательности находятся очень близко
+            </p>
+          </div>
+          <div class="reasons__item reason">
+            <h3 class="reason__title">Красивая дорога</h3>
+            <p class="reason__count">— №4 —</p>
+            <p class="reason__description">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </div>
+          <div class="reasons__item reason">
+            <h3 class="reason__title">Мало туристов</h3>
+            <p class="reason__count">— №5 —</p>
+            <p class="reason__description">
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="page-booking">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__hastag">#visitsedona</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">Мы в Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Facebook">Мы в Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube">Мы в Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>

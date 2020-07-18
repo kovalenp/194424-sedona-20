@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="./index.html">
+        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Логотип Седона" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <img src="./img/svg/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__menu site-list">
+            <li class="site-list__item site-list__item--close-button">
+              <a href="./index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-intro">
+        <div class="page-intro__background">
+          <img src="./img/back-desktop.jpg" alt="Фон" />
+        </div>
+        <div class="page-intro__logo page-intro__logo--text">
+          <img src="./img/svg/text-intro.svg" alt="Интро-текст" />
+        </div>
+        <div class="page-intro__mask"></div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Фото и видео</h1>
+      <div class="page-context">
+        <p class="page-context__title">
+          Фото и видео
+        </p>
+        <p class="page-context__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
+        </p>
+      </div>
+      <section class="photo-gallery">
+        <h2 class="visually-hidden">Фото</h2>
+        <div class="photo-gallery-wrapper">
+          <div class="photo-gallery__item photo">
+            <img class="photo__img" src="./img/photo-1-mobile.jpg" alt="Фото городок" />
+            <p class="photo__title">Неродные просторы</p>
+            <p class="photo__author">Автор фото: Борис</p>
+            <p class="photo__like-counter">1350</p>
+          </div>
+          <div class="photo-gallery__item photo">
+            <img class="photo__img" src="./img/photo-2-mobile.jpg" alt="Фото городок" />
+            <p class="photo__title">Местная растительность</p>
+            <p class="photo__author">Автор фото: Сергей</p>
+            <p class="photo__like-counter">143</p>
+          </div>
+          <div class="photo-gallery__item photo">
+            <img class="photo__img" src="./img/photo-3-mobile.jpg" alt="Фото городок" />
+            <p class="photo__title">Дорога на север</p>
+            <p class="photo__author">Автор фото: Петр</p>
+            <p class="photo__like-counter">96</p>
+          </div>
+          <div class="photo-gallery__item photo">
+            <img class="photo__img" src="./img/photo-4-desktop1.jpg" alt="Фото городок" />
+            <p class="photo__title">Мост дьявола</p>
+            <p class="photo__author">Автор фото: Антон</p>
+            <p class="photo__like-counter">254</p>
+          </div>
+        </div>
+      </section>
+      <section class="video-gallery">
+        <h2 class="visually-hidden">Видео</h2>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__hastag">#visitsedona</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">Мы в Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Facebook">Мы в Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube">Мы в Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
