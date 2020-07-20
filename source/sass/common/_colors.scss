@@ -1,0 +1,20 @@
+// Палитра нейтральных цветов
+$color__neutral: #f2f2f2;
+$color__neutral--hover: #e5e5e5;
+$color__neutral--darker: #d5d5d5;
+
+// Палитра основных цветов
+$color__primary: #81b3d2;
+$color__primary--hover: #669ec0;
+$color__primary--darker: #5496bd;
+$color__primary--disabled: $color__neutral--hover;
+
+$color__primary-text: #ffffff;
+
+// Палитра текста меню
+$color__menu-text: #000000;
+$color__menu-text--hover: $color__primary;
+$color__menu-text--light: rgba($color__menu-text, 0.3);
+$color__accent-text: #766357;
+$color__accent-text--hover: #604e43;
+$color__accent-text--light: rgba($color__accent-text, 0.3);
