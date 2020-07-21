@@ -1,0 +1,10 @@
+// Стили меню
+
+.main-nav__menu {
+  list-style-type: none;
+  background-color: $color__primary;
+
+  & a {
+    color: $color__primary-text;
+  }
+}

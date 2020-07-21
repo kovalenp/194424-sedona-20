@@ -1,0 +1,27 @@
+@import "./common/colors";
+@import "./common/fonts";
+@import "./nav/main-nav.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.invisible {
+  display: none;
+}
+
+body {
+  font-family: "PT Sans", "Times New Roman", sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
