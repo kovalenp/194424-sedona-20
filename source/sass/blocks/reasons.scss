@@ -1,0 +1,16 @@
+@import "../common/fonts.scss";
+@import "../common/colors.scss";
+@import "../common/screens";
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $color__secondary;
+}
+
+.reason--highlight {
+  background-color: $color__primary;
+  color: $color__primary-text;
+}

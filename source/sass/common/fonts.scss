@@ -1,0 +1,40 @@
+$font-size__title: 18px;
+$font-size__title--large: 21px;
+
+$font-size__description: 14px;
+
+$line-height: 26px;
+$line-height--small: 21px;
+$line-height--large: 40px;
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font($font-size, $line-height: normal, $font-weight: normal, $font-style: normal) {
+  font-size: $font-size;
+
+  @if $line-height==normal {
+    line-height: normal;
+  } @else {
+    line-height: $line-height;
+  }
+
+  @if $font-weight==normal {
+    font-weight: normal;
+  } @else {
+    font-weight: $font-weight;
+  }
+
+  font-style: $font-style;
+}

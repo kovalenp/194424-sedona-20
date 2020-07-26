@@ -1,10 +1,12 @@
 @import "./common/colors";
 @import "./common/fonts";
-@import "./common/viewports";
-@import "./common/mixin";
+@import "./common/screens";
 @import "./common/button.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/page-header.scss";
+@import "./blocks/context.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/page-booking.scss";
 
 .visually-hidden {
   position: absolute;
@@ -21,6 +23,12 @@
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "PT Sans", "Times New Roman", sans-serif;
   text-transform: uppercase;
@@ -30,7 +38,20 @@ a {
   text-decoration: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.title {
+  @include mobile {
+    @include font($font-size__title, $line-height, bold);
+  }
+
+  @include tablet {
+    @include font($font-size__title--large, $line-height, bold);
+  }
+
+  @include desktop {
+    @include font($font-size__title--large, $line-height, bold);
+  }
+}
+
+.description {
+  @include font($font-size__description, $line-height);
 }

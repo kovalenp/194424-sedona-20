@@ -1,8 +1,8 @@
 @import "../common/colors";
-@import "../common/mixin";
+@import "../common/screens";
+@import "../common/fonts.scss";
 
 // Стили меню
-
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -16,22 +16,33 @@
     flex-direction: column;
     align-items: center;
     background-color: $color__primary;
+
+    @include font($font-size__title, $line-height--large, bold);
+
     & a {
       color: $color__primary-text;
     }
   }
+
   @include tablet {
     flex-direction: row;
     justify-content: space-around;
     background-color: $color__primary-text;
+
+    @include font($font-size__description, $line-height, bold);
+
     & a {
       color: $color__menu-text;
     }
   }
+
   @include desktop {
     flex-direction: row;
     justify-content: space-around;
     background-color: $color__primary-text;
+
+    @include font($font-size__description, $line-height, bold);
+
     & a {
       color: $color__menu-text;
     }
