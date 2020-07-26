@@ -2,6 +2,14 @@
 @import "../common/colors.scss";
 @import "../common/screens";
 
+// .reasons-wrapper {
+//   display: flex;
+
+//   @include mobile {
+//     flex-wrap: nowrap;
+//   }
+// }
+
 .reason {
   display: flex;
   flex-direction: column;
