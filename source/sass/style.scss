@@ -7,6 +7,7 @@
 @import "./blocks/context.scss";
 @import "./blocks/reasons.scss";
 @import "./blocks/page-booking.scss";
+@import "./blocks/page-footer.scss";
 
 .visually-hidden {
   position: absolute;
@@ -19,7 +20,7 @@
   overflow: hidden;
 }
 
-.invisible {
+.js-invisible {
   @include mobile {
     display: none;
   }

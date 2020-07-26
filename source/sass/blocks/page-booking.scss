@@ -6,3 +6,10 @@
   background-color: $color__primary;
   color: $color__primary-text;
 }
+
+.page-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

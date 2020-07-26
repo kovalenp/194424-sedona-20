@@ -1,0 +1,24 @@
+@import "../common/fonts.scss";
+@import "../common/colors.scss";
+@import "../common/screens";
+
+.page-footer {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

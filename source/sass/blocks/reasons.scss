@@ -2,13 +2,9 @@
 @import "../common/colors.scss";
 @import "../common/screens";
 
-// .reasons-wrapper {
-//   display: flex;
-
-//   @include mobile {
-//     flex-wrap: nowrap;
-//   }
-// }
+.reasons-wrapper {
+  display: grid;
+}
 
 .reason {
   display: flex;
@@ -18,7 +14,45 @@
   background-color: $color__secondary;
 }
 
+.feature__item {
+  @extend .reason;
+  background-color: transparent;
+}
+
 .reason--highlight {
   background-color: $color__primary;
   color: $color__primary-text;
+}
+
+.reasons__list {
+  list-style: none;
+  display: grid;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.highlight {
+  display: grid;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 2fr;
+  }
 }
