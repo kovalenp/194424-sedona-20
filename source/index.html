@@ -8,10 +8,12 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Логотип Седона" />
-      </a>
       <nav class="main-nav">
+        <div class="page-header__logo">
+          <a href="#">
+            <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Логотип Седона" />
+          </a>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__menu site-list">
             <li class="site-list__item site-list__item--close-button">
@@ -28,10 +30,12 @@
             </li>
           </ul>
         </div>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <img src="./img/svg/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
-        </button>
+        <div class="main-nav__toggle">
+          <button class="button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="./img/svg/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
+          </button>
+        </div>
       </nav>
       <div class="page-intro">
         <div class="page-intro__background">

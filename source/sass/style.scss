@@ -1,6 +1,10 @@
 @import "./common/colors";
 @import "./common/fonts";
-@import "./nav/main-nav.scss";
+@import "./common/viewports";
+@import "./common/mixin";
+@import "./common/button.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page-header.scss";
 
 .visually-hidden {
   position: absolute;
@@ -24,4 +28,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }

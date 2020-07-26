@@ -1,0 +1,51 @@
+@import "../common/colors";
+@import "../common/mixin";
+
+// Стили меню
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__menu {
+  list-style: none;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    background-color: $color__primary;
+    & a {
+      color: $color__primary-text;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color__primary-text;
+    & a {
+      color: $color__menu-text;
+    }
+  }
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color__primary-text;
+    & a {
+      color: $color__menu-text;
+    }
+  }
+}
+
+.main-nav__toggle {
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
