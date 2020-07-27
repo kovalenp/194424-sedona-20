@@ -1,0 +1,73 @@
+@import "../common/fonts.scss";
+@import "../common/colors.scss";
+@import "../common/screens";
+
+.reasons {
+  display: grid;
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+
+  @include mobile {
+    min-width: 320px;
+  }
+}
+
+.reason--highlight {
+  background-color: $color__primary;
+  color: $color__primary-text;
+}
+
+.reason--accent {
+  background-color: $color__secondary;
+
+  @include mobile {
+    min-height: 168px;
+  }
+
+  @include tablet {
+    min-height: 256px;
+  }
+
+  @include desktop {
+    min-height: 256px;
+  }
+}
+
+.reasons__list {
+  list-style: none;
+  display: grid;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.reasons__highlight {
+  display: grid;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 2fr;
+  }
+}

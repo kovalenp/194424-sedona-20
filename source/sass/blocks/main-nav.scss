@@ -1,0 +1,65 @@
+@import "../common/colors";
+@import "../common/screens";
+@import "../common/fonts.scss";
+
+// Стили меню
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__menu {
+  list-style: none;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    background-color: $color__primary;
+
+    @include font($font-size__title, $line-height--large, bold);
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color__primary-text;
+
+    @include font($font-size__description, $line-height, bold);
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color__primary-text;
+
+    @include font($font-size__description, $line-height, bold);
+  }
+}
+
+.site-list__link {
+  @include mobile {
+    color: $color__primary-text;
+  }
+
+  @include tablet {
+    color: $color__menu-text;
+  }
+
+  @include desktop {
+    color: $color__menu-text;
+  }
+}
+
+.main-nav__toggle {
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
