@@ -12,6 +12,10 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+
+  @include mobile {
+    min-width: 320px;
+  }
 }
 
 .reason--highlight {
@@ -21,6 +25,18 @@
 
 .reason--accent {
   background-color: $color__secondary;
+
+  @include mobile {
+    min-height: 168px;
+  }
+
+  @include tablet {
+    min-height: 256px;
+  }
+
+  @include desktop {
+    min-height: 256px;
+  }
 }
 
 .reasons__list {
@@ -32,11 +48,11 @@
   }
 
   @include tablet {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   @include desktop {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 

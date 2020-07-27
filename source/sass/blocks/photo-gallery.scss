@@ -1,0 +1,39 @@
+@import "../common/fonts.scss";
+@import "../common/colors.scss";
+@import "../common/screens";
+
+.photo-gallery {
+  display: grid;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo-gallery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &:first-of-type {
+    border: 2px solid red;
+
+    @include tablet {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    @include desktop {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}

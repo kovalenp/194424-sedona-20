@@ -8,30 +8,34 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="./index.html">
-        <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Логотип Седона" />
-      </a>
       <nav class="main-nav">
+        <div class="page-header__logo">
+          <a href="./index.html">
+            <img src="./img/svg/logotyle-mobile.svg" width="102" height="84" alt="Логотип Седона" />
+          </a>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__menu site-list">
             <li class="site-list__item site-list__item--close-button">
-              <a href="./index.html">Главная</a>
+              <a class="site-list__link" href="./index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="./photo.html">Фото и видео</a>
+              <a class="site-list__link" href="./photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Форма отзыва</a>
+              <a class="site-list__link" href="#">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <img src="./img/svg/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
-        </button>
+        <div class="main-nav__toggle">
+          <button class="button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="./img/svg/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
+          </button>
+        </div>
       </nav>
       <div class="page-intro">
         <div class="page-intro__background">
@@ -46,10 +50,10 @@
     <main class="page-main">
       <h1 class="visually-hidden">Отзывы</h1>
       <div class="context">
-        <p class="context__title">
+        <p class="context__title title">
           Оставьте свой отзыв
         </p>
-        <p class="context__description">
+        <p class="context__description description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
