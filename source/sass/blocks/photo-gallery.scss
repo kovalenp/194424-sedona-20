@@ -4,6 +4,7 @@
 
 .photo-gallery {
   display: grid;
+
   @include mobile {
     grid-template-columns: 1fr;
   }
