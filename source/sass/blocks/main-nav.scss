@@ -18,10 +18,6 @@
     background-color: $color__primary;
 
     @include font($font-size__title, $line-height--large, bold);
-
-    & a {
-      color: $color__primary-text;
-    }
   }
 
   @include tablet {
@@ -30,10 +26,6 @@
     background-color: $color__primary-text;
 
     @include font($font-size__description, $line-height, bold);
-
-    & a {
-      color: $color__menu-text;
-    }
   }
 
   @include desktop {
@@ -42,10 +34,20 @@
     background-color: $color__primary-text;
 
     @include font($font-size__description, $line-height, bold);
+  }
+}
 
-    & a {
-      color: $color__menu-text;
-    }
+.site-list__link {
+  @include mobile {
+    color: $color__primary-text;
+  }
+
+  @include tablet {
+    color: $color__menu-text;
+  }
+
+  @include desktop {
+    color: $color__menu-text;
   }
 }
 
@@ -56,6 +58,7 @@
   @include tablet {
     display: none;
   }
+
   @include desktop {
     display: none;
   }

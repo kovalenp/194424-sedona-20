@@ -2,7 +2,7 @@
 @import "../common/colors.scss";
 @import "../common/screens";
 
-.reasons-wrapper {
+.reasons {
   display: grid;
 }
 
@@ -11,17 +11,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: $color__secondary;
-}
-
-.feature__item {
-  @extend .reason;
-  background-color: transparent;
+  text-align: center;
 }
 
 .reason--highlight {
   background-color: $color__primary;
   color: $color__primary-text;
+}
+
+.reason--accent {
+  background-color: $color__secondary;
 }
 
 .reasons__list {
@@ -41,7 +40,7 @@
   }
 }
 
-.highlight {
+.reasons__highlight {
   display: grid;
 
   @include mobile {

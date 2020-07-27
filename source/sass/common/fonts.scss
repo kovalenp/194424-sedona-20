@@ -23,18 +23,7 @@ $line-height--large: 40px;
 
 @mixin font($font-size, $line-height: normal, $font-weight: normal, $font-style: normal) {
   font-size: $font-size;
-
-  @if $line-height==normal {
-    line-height: normal;
-  } @else {
-    line-height: $line-height;
-  }
-
-  @if $font-weight==normal {
-    font-weight: normal;
-  } @else {
-    font-weight: $font-weight;
-  }
-
+  line-height: $line-height;
+  font-weight: $font-weight;
   font-style: $font-style;
 }
