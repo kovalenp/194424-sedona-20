@@ -27,6 +27,12 @@
   background-color: $color__secondary;
 
   @include mobile {
+    &::after {
+      content: "";
+      width: 90%;
+      border-bottom: 2px solid black;
+    }
+
     min-height: 168px;
   }
 
