@@ -47,6 +47,7 @@
   justify-content: center;
   align-items: center;
   min-width: 320px;
+
   @include font($font-size__title, $line-height--large, bold);
   text-align: center;
   color: $color__primary-text;
@@ -56,6 +57,7 @@
     width: 100%;
     min-width: auto;
     padding: 0;
+
     @include font($font-size__description, $line-height, bold);
     text-align: center;
     color: $color__menu-text;
@@ -63,6 +65,7 @@
 
   @include desktop {
     margin: 0;
+
     @include font($font-size__description, $line-height, bold);
     text-align: center;
     color: $color__menu-text;

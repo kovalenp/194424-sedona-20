@@ -24,7 +24,7 @@
   background-color: $color__secondary;
 
   @include mobile {
-    &:not(:last-child):after {
+    &:not(:last-child)::after {
       content: "";
       width: 90%;
       border-bottom: 1px solid $color__border;
