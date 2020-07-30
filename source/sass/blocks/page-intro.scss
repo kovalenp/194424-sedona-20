@@ -1,0 +1,24 @@
+.page-intro {
+  z-index: 1;
+  position: relative;
+}
+
+.page-intro__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+  @include mobile {
+    top: 90px;
+  }
+}
+
+.page-intro__mask {
+  @include mobile {
+    background-image: url("/../img/svg/intro-triangle.svg");
+    position: absolute;
+    width: 320px;
+    height: 57px;
+    bottom: 0px;
+  }
+}

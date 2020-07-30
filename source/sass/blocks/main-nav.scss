@@ -1,7 +1,3 @@
-@import "../common/colors";
-@import "../common/screens";
-@import "../common/fonts.scss";
-
 // Стили меню
 .main-nav {
   display: flex;
@@ -70,8 +66,9 @@
 }
 
 .main-nav__toggle {
+  z-index: 3;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   left: 288px;
   top: 12px;
   border: 0;

@@ -1,7 +1,3 @@
-@import "../common/fonts.scss";
-@import "../common/colors.scss";
-@import "../common/screens";
-
 .reasons {
   display: grid;
 }
@@ -15,6 +11,7 @@
 
   @include mobile {
     min-width: 320px;
+    min-height: 191px;
   }
 }
 
@@ -27,10 +24,10 @@
   background-color: $color__secondary;
 
   @include mobile {
-    &::after {
+    &:not(:last-child):after {
       content: "";
       width: 90%;
-      border-bottom: 2px solid black;
+      border-bottom: 1px solid $color__border;
     }
 
     min-height: 168px;
