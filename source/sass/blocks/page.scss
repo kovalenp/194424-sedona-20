@@ -1,7 +1,6 @@
 .page {
   min-height: 100%;
   margin: 0 auto;
-  font-size: 0;
   background-color: $color__primary-text;
 
   @include mobile {
