@@ -5,6 +5,5 @@ menu.classList.add("js-invisible");
 
 menuToggleButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log("Clicked");
   menu.classList.toggle("js-invisible");
 });
