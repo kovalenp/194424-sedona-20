@@ -41,7 +41,11 @@
       </nav>
       <div class="page-intro">
         <div class="page-intro__background">
-          <img src="./img/back-mobile.jpg" alt="Фон" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/bg-back-desktop@1x.jpg" />
+            <source media="(min-width: 768px)" srcset="./img/bg-back-tablet@1x.jpg" />
+            <img src="./img/back-mobile.jpg" alt="Фон" />
+          </picture>
         </div>
         <div class="page-intro__logo page-intro__logo--full">
           <img src="./img/svg/text-intro-full.svg" alt="Интро-текст" />
@@ -139,7 +143,7 @@
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
         </div>
-        <button class="page-booking__button button" type="button">Найти гостиницу</button>
+        <button class="page-booking__button button" type="button"><span class="button-text">Найти гостиницу</span></button>
         <div class="page-booking__map">
           <img src="./img/map-mobile.jpg.jpg" alt="Карта" />
         </div>
@@ -152,13 +156,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">Мы в Twitter</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Facebook">Мы в Facebook</a>
+            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube">Мы в Youtube</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube"></a>
           </li>
         </ul>
       </div>

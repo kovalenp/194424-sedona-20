@@ -1,7 +1,8 @@
 .page-booking__button {
   @include font($font-size__title--large, $line-height, bold);
-  background-color: $color__primary;
-  color: $color__primary-text;
+  width: 280px;
+  height: 58px;
+  margin: 15px 32px;
 }
 
 .page-booking {

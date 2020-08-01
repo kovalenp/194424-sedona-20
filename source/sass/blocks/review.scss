@@ -1,0 +1,54 @@
+.review__personal-info {
+  grid-area: personal-info;
+}
+
+.review__contacts {
+  grid-area: contacts;
+}
+
+.review__impressions {
+  grid-area: impressions;
+}
+
+.review__sightseeing {
+  grid-area: sightseeing;
+}
+
+.review__text {
+  grid-area: text;
+}
+
+.review__button {
+  grid-area: button;
+}
+
+.review__footnote {
+  grid-area: footnote;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.review {
+  display: grid;
+  grid-template-rows: auto;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "impressions personal-info"
+      "contacts contacts"
+      "sightseeing sightseeing"
+      "text text"
+      "button footnote";
+  }
+}
+
+.review-section {
+  border: none;
+}

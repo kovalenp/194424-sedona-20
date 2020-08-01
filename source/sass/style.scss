@@ -4,14 +4,16 @@
 @import "./common/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/page-header.scss";
 @import "./blocks/context.scss";
-@import "./blocks/reasons.scss";
-@import "./blocks/site-list.scss";
 @import "./blocks/page-booking.scss";
+@import "./blocks/page-header.scss";
 @import "./blocks/page-intro.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/photo-gallery.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/review.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/social.scss";
 
 .visually-hidden {
   position: absolute;

@@ -3,14 +3,15 @@
   position: relative;
 }
 
+.page-intro__background {
+  background-size: cover;
+}
+
 .page-intro__logo {
   position: absolute;
   left: 50%;
+  top: 90px;
   transform: translate(-50%);
-
-  @include mobile {
-    top: 90px;
-  }
 }
 
 .page-intro__mask {

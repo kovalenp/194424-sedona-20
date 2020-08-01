@@ -1,8 +1,14 @@
 .button {
   font-family: inherit;
+  background-color: $color__primary;
+  color: $color__primary-text;
   font-size: 100%;
   padding: 0;
   margin: 0;
   border: none;
-  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.button:active .button-text {
+  opacity: 0.3;
 }
