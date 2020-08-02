@@ -1,3 +1,4 @@
+@import "./common/visually-hidden.scss";
 @import "./common/colors";
 @import "./common/fonts";
 @import "./common/screens";
@@ -15,17 +16,6 @@
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .js-invisible {
   @include mobile {
     display: none;
@@ -38,6 +28,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: $color__neutral;
+}
+
 body {
   font-family: "PT Sans", "Times New Roman", sans-serif;
   text-transform: uppercase;
@@ -45,10 +39,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-html {
-  background-color: $color__neutral;
 }
 
 .title {
