@@ -1,4 +1,4 @@
-const menu = document.querySelector(".main-nav__menu");
+const menu = document.querySelector(".main-nav__list");
 const menuToggleButton = document.querySelector(".main-nav__toggle");
 
 menu.classList.add("js-invisible");
