@@ -37,36 +37,6 @@
   }
 }
 
-.feature--living {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/icon-house.svg");
-  fill: $color__primary;
-
-  @include mobile {
-    height: 37px;
-    width: 38px;
-    background-size: 37px 38px;
-    margin: 0 3%;
-    margin-top: -3%;
-  }
-}
-
-.feature--living {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/icon-house.svg");
-  fill: $color__primary;
-
-  @include mobile {
-    height: 37px;
-    width: 38px;
-    background-size: 37px 38px;
-    margin: 0 3%;
-    margin-top: -3%;
-  }
-}
-
 .feature--living,
 .feature--food,
 .feature--gift {
