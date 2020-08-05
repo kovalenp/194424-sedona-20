@@ -16,10 +16,13 @@
 
 .page-intro__mask {
   @include mobile {
-    background-image: url("/../img/svg/intro-triangle.svg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    width: 320px;
-    height: 57px;
+    width: 100%;
+    min-width: 320px;
+    min-height: 57px;
     bottom: 0;
   }
 }
