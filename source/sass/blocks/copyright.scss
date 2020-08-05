@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  margin-left: 10px;
+
+  &:hover {
+    fill: $color__primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

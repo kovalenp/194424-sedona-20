@@ -40,14 +40,6 @@
 
     @include font($font-size__description, $line-height, bold);
   }
-
-  @include desktop {
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: $color__primary-text;
-
-    @include font($font-size__description, $line-height, bold);
-  }
 }
 
 .site-list__link {
@@ -58,33 +50,24 @@
   @include tablet {
     color: $color__menu-text;
   }
-
-  @include desktop {
-    color: $color__menu-text;
-  }
 }
 
 .main-nav__toggle {
   z-index: 3;
   position: relative;
-  margin-bottom: 40px;
-  left: 288px;
-  top: 12px;
+  margin-bottom: 31px;
+  left: 87%;
+  top: 20px;
   border: 0;
   background-color: $color__primary-text;
 
   @include tablet {
     display: none;
   }
-
-  @include desktop {
-    display: none;
-  }
 }
 
 .main-nav__list {
   justify-content: center;
-  width: 320px;
   margin: 0;
   padding: 0;
   list-style-type: none;
