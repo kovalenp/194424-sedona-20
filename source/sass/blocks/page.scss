@@ -2,9 +2,9 @@
   min-height: 100%;
   margin: 0 auto;
   background-color: $color__primary-text;
+  min-width: 320px;
 
   @include mobile {
-    min-width: 320px;
     width: 100%;
   }
 
