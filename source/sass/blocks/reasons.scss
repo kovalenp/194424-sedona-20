@@ -15,55 +15,6 @@
   }
 }
 
-.feature__wrapper {
-  display: flex;
-  margin-top: 7%;
-
-  &:last-child {
-    @include mobile {
-      margin-bottom: 7%;
-    }
-  }
-}
-
-.feature__item {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: start;
-
-  @include mobile {
-    width: 75%;
-  }
-}
-
-.feature--living,
-.feature--food,
-.feature--gift {
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @include mobile {
-    height: 37px;
-    width: 38px;
-    background-size: 37px 38px;
-    margin: 0 3%;
-    margin-top: -3%;
-  }
-}
-
-.feature--living {
-  background-image: url("../img/svg/icon-house.svg");
-}
-
-.feature--gift {
-  background-image: url("../img/svg/icon-gift.svg");
-}
-
-.feature--food {
-  background-image: url("../img/svg/icon-burger.svg");
-}
-
 .reason--highlight {
   background-color: $color__primary;
   color: $color__primary-text;

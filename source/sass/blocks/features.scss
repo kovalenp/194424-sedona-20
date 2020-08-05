@@ -1,0 +1,46 @@
+.feature__wrapper {
+  display: flex;
+  margin-top: 7%;
+
+  &:last-child {
+    @include mobile {
+      margin-bottom: 7%;
+    }
+  }
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+
+  @include mobile {
+    width: 75%;
+  }
+}
+
+.feature__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include mobile {
+    height: 37px;
+    width: 38px;
+    background-size: 37px 38px;
+    margin: 0 3%;
+    margin-top: -3%;
+  }
+
+  &--living {
+    background-image: url("../img/svg/icon-house.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/svg/icon-gift.svg");
+  }
+
+  &--food {
+    background-image: url("../img/svg/icon-burger.svg");
+  }
+}
