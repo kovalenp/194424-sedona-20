@@ -66,25 +66,41 @@
       <section class="photo-gallery">
         <h2 class="visually-hidden">Фото</h2>
         <div class="photo-gallery__item photo">
-          <img class="photo__img" src="./img/photo-1-mobile.jpg" alt="Фото городок" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg" />
+            <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg" />
+            <img src="./img/photo-sunset-mobile@1x.jpg" alt="Фото городок" />
+          </picture>
           <p class="photo__title">Неродные просторы</p>
           <p class="photo__author">Автор фото: Борис</p>
           <p class="photo__like-counter">1350</p>
         </div>
         <div class="photo-gallery__item photo">
-          <img class="photo__img" src="./img/photo-2-mobile.jpg" alt="Фото городок" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg" />
+            <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg" />
+            <img src="./img/photo-cactus-mobile@1x.jpg" alt="Фото кактус" />
+          </picture>
           <p class="photo__title">Местная растительность</p>
           <p class="photo__author">Автор фото: Сергей</p>
           <p class="photo__like-counter">143</p>
         </div>
         <div class="photo-gallery__item photo">
-          <img class="photo__img" src="./img/photo-3-mobile.jpg" alt="Фото городок" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg" />
+            <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg" />
+            <img src="./img/photo-roads-mobile@1x.jpg" alt="Фото дороги" />
+          </picture>
           <p class="photo__title">Дорога на север</p>
           <p class="photo__author">Автор фото: Петр</p>
           <p class="photo__like-counter">96</p>
         </div>
         <div class="photo-gallery__item photo">
-          <img class="photo__img" src="./img/photo-4-desktop1.jpg" alt="Фото городок" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg" />
+            <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg" />
+            <img src="./img/photo-bridge-mobile@1x.jpg" alt="Фото скала" />
+          </picture>
           <p class="photo__title">Мост дьявола</p>
           <p class="photo__author">Автор фото: Антон</p>
           <p class="photo__like-counter">254</p>
