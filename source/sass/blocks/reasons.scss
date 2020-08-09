@@ -70,21 +70,24 @@
 
   @include tablet {
     grid-template-columns: 1fr 2fr;
+    max-height: 256px;
   }
 
   &--reverted {
     @include tablet {
       grid-template-columns: 2fr 1fr;
+      max-height: 256px;
     }
   }
-}
-
-.reasons__highlight img {
-  margin: 0 auto;
-  max-height: 256px;
 }
 
 .reason__title {
   // TODO: this is wrong, fix with pixel perfect for the second element
   padding-top: 35px;
+}
+
+.reason__image {
+  @include desktop {
+    width: 800px;
+  }
 }

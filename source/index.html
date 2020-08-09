@@ -41,10 +41,11 @@
       </nav>
       <div class="page-intro">
         <div class="page-intro__background">
-        <div class="page-intro__logo page-intro__logo--full">
-          <img src="./img/text-sedona-index.svg" alt="Интро-текст" />
+          <div class="page-intro__logo page-intro__logo--full">
+            <img src="./img/text-sedona-index.svg" alt="Интро-текст" />
+          </div>
+          <div class="page-intro__mask"></div>
         </div>
-        <div class="page-intro__mask"></div>
       </div>
     </header>
     <main class="page-main">
@@ -68,11 +69,13 @@
               Седона не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <picture>
-              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
-              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городок">
-          </picture>
+          <div class="reason__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x" />
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городок" />
+            </picture>
+          </div>
         </div>
         <ul class="reasons__list feature">
           <li class="feature__wrapper">
@@ -111,11 +114,13 @@
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
-          <picture>
-              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
-              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Мост Дьявола">
-          </picture>
+          <div class="reason__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x" />
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Мост Дьявола" />
+            </picture>
+          </div>
         </div>
         <div class="reasons__list">
           <div class="reason reason--accent">
@@ -153,12 +158,11 @@
         </div>
         <button class="page-booking__button button" type="button"><span class="button-text">Найти гостиницу</span></button>
         <div class="page-booking__map">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
-              <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
-            </picture>
-          </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x" />
+            <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта" />
+          </picture>
         </div>
       </section>
     </main>

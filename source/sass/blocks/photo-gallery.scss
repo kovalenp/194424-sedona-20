@@ -33,4 +33,17 @@
 
 .photo-gallery__item img {
   margin: 0 auto;
+  width: 100%;
 }
+
+// .photo {
+//   @include mobile {
+//     width: 280px;
+//     height: 280px;
+//     margin: 0 auto;
+//   }
+//   @include tablet {
+//     width: 648px;
+//     height: 400px;
+//   }
+// }
