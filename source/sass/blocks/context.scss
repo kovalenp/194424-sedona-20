@@ -4,22 +4,21 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 
-  @include mobile {
-    width: 90%;
+  @include tablet {
+    min-height: 206px;
+    width: 70%;
     margin: 0 auto;
   }
 }
 
 .context__title {
-  @include mobile {
-    padding: 0 15px;
-    margin-top: 30px;
-  }
+  padding: 0 15px;
+  margin-top: 30px;
 }
 
 .context__description {
-  @include mobile {
-    margin: 30px 0;
-  }
+  margin: 30px 0;
 }
