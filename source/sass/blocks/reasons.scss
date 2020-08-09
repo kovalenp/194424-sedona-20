@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  max-height: 256px;
 
   @include mobile {
     min-width: 320px;
@@ -18,6 +19,12 @@
 .reason--highlight {
   background-color: $color__primary;
   color: $color__primary-text;
+}
+
+.reason--reverted {
+  @include tablet {
+    order: 2;
+  }
 }
 
 .reason--accent {
@@ -64,19 +71,18 @@
   @include tablet {
     grid-template-columns: 1fr 2fr;
   }
+
+  &--reverted {
+    @include tablet {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
 }
 
-.reasons__img,
-.reasons__img picture,
-.reasons__img img {
-  @include mobile {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @include tablet {
-    max-height: 256px;
-  }
+.reasons__img img,
+.reasons__img picture {
+  margin: 0 auto;
+  height: 256px;
 }
 
 .reason__title {
