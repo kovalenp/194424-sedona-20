@@ -14,6 +14,7 @@
 
   @include retina {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: center -106px;
   }
 
   @include tablet {

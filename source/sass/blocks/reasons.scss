@@ -36,10 +36,6 @@
   @include tablet {
     min-height: 256px;
   }
-
-  @include desktop {
-    min-height: 256px;
-  }
 }
 
 .reasons__list {
@@ -56,10 +52,6 @@
   @include tablet {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  @include desktop {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .reasons__highlight {
@@ -72,8 +64,22 @@
   @include tablet {
     grid-template-columns: 1fr 2fr;
   }
+}
 
-  @include desktop {
-    grid-template-columns: 1fr 2fr;
+.reasons__img,
+.reasons__img picture,
+.reasons__img img {
+  @include mobile {
+    width: 100%;
+    margin: 0 auto;
   }
+
+  @include tablet {
+    max-height: 256px;
+  }
+}
+
+.reason__title {
+  // TODO: this is wrong, fix with pixel perfect for the second element
+  padding-top: 35px;
 }
