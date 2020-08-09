@@ -79,10 +79,9 @@
   }
 }
 
-.reasons__img img,
-.reasons__img picture {
+.reasons__highlight img {
   margin: 0 auto;
-  height: 256px;
+  max-height: 256px;
 }
 
 .reason__title {
