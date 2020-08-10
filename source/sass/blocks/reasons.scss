@@ -87,6 +87,10 @@
 }
 
 .reason__image {
+  @include mobile {
+    margin: 0 auto;
+  }
+
   @include desktop {
     width: 800px;
   }
