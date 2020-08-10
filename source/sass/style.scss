@@ -43,6 +43,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .title {
   @include mobile {
     @include font($font-size__title, $line-height, bold);

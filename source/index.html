@@ -41,16 +41,11 @@
       </nav>
       <div class="page-intro">
         <div class="page-intro__background">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./img/bg-back-desktop@1x.jpg" />
-            <source media="(min-width: 768px)" srcset="./img/bg-back-tablet@1x.jpg" />
-            <img src="./img/bg-back-mobile@1x.jpg" alt="Фон" />
-          </picture>
+          <div class="page-intro__logo page-intro__logo--full">
+            <img src="./img/text-sedona-index.svg" alt="Интро-текст" />
+          </div>
+          <div class="page-intro__mask"></div>
         </div>
-        <div class="page-intro__logo page-intro__logo--full">
-          <img src="./img/svg/text-intro-full.svg" alt="Интро-текст" />
-        </div>
-        <div class="page-intro__mask"></div>
       </div>
     </header>
     <main class="page-main">
@@ -62,6 +57,7 @@
         <p class="context__description description">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
+        <div class="context__mask"></div>
       </div>
       <section class="reasons">
         <h2 class="visually-hidden">Причины по которым Седона крутая</h2>
@@ -73,11 +69,11 @@
               Седона не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <div class="reasons__img">
+          <div class="reason__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/main-city-desktop@1x.jpg" />
-              <source media="(min-width: 768px)" srcset="./img/main-city-tablet@1x.jpg" />
-              <img src="./img/main-city-mobile@1x.jpg" alt="Фото городок" />
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x" />
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городок" />
             </picture>
           </div>
         </div>
@@ -110,19 +106,19 @@
             </div>
           </li>
         </ul>
-        <div class="reasons__highlight">
-          <div class="reason reason--highlight">
+        <div class="reasons__highlight reasons__highlight--reverted">
+          <div class="reason reason--highlight reason--reverted">
             <h3 class="reason__title title">Там есть Мост дьявола</h3>
             <p class="reason__count description">— №2 —</p>
             <p class="reason__description description">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
-          <div class="reasons__img">
+          <div class="reason__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/main-bridge-desktop@1x.jpg" />
-              <source media="(min-width: 768px)" srcset="./img/main-bridge-tablet@1x.jpg" />
-              <img src="./img/main-bridge-mobile@1x.jpg" alt="Фото Мост Дьявола" />
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x" />
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Мост Дьявола" />
             </picture>
           </div>
         </div>
@@ -163,9 +159,9 @@
         <button class="page-booking__button button" type="button"><span class="button-text">Найти гостиницу</span></button>
         <div class="page-booking__map">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.jpg" />
-            <source media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.jpg" />
-            <img src="./img/bg-map-mobile@1x.jpg" alt="Карта" />
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x" />
+            <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта" />
           </picture>
         </div>
       </section>
