@@ -1,6 +1,4 @@
 .feature {
-  background-color: $color__primary-text;
-
   @include tablet {
     min-height: 330px;
   }
