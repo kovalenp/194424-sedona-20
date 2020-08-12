@@ -1,3 +1,9 @@
+.feature {
+  @include tablet {
+    min-height: 330px;
+  }
+}
+
 .feature__wrapper {
   display: flex;
   margin-top: 7%;
