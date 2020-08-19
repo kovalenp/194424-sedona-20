@@ -70,6 +70,9 @@
           </div>
           <div class="reasons__image">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x" />
               <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x" />
               <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото городок" />
@@ -77,8 +80,8 @@
           </div>
         </div>
         <ul class="reasons__list feature">
-          <li class="feature__wrapper">
-            <span class="feature__icon feature__icon--living"></span>
+          <li class="feature__wrapper feature__wrapper--left">
+            <svg class="feature__icon feature__icon--house"><use xlink:href="img/sprite.svg#icon-house"></use></svg>
             <div class="feature__item">
               <h3 class="feature__title title">Жильё</h3>
               <p class="feature__description description">
@@ -86,8 +89,8 @@
               </p>
             </div>
           </li>
-          <li class="feature__wrapper">
-            <span class="feature__icon feature__icon--gift"></span>
+          <li class="feature__wrapper feature__wrapper--right">
+            <svg class="feature__icon feature__icon--gift"><use xlink:href="img/sprite.svg#icon-gift"></use></svg>
             <div class="feature__item">
               <h3 class="feature__title title">Сувениры</h3>
               <p class="feature__description description">
@@ -95,8 +98,8 @@
               </p>
             </div>
           </li>
-          <li class="feature__wrapper">
-            <span class="feature__icon feature__icon--food"></span>
+          <li class="feature__wrapper feature__wrapper--center">
+            <svg class="feature__icon feature__icon--burger"><use xlink:href="img/sprite.svg#icon-burger"></use></svg>
             <div class="feature__item">
               <h3 class="feature__title title">Еда</h3>
               <p class="feature__description description">
@@ -115,6 +118,9 @@
           </div>
           <div class="reasons__image">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x" />
               <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x" />
               <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото Мост Дьявола" />
@@ -158,6 +164,9 @@
         <button class="page-booking__button button" type="button"><span class="button-text">Найти гостиницу</span></button>
         <div class="page-booking__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x" />
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x" />
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x" />
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x" />
             <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта" />
@@ -172,13 +181,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter"></a>
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">
+              <svg class="social__icon social__icon--twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Facebook"></a>
+            <a class="social__link" href="https://facebook.com/htmlacademy" aria-label="Facebook">
+              <svg class="social__icon social__icon--facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube"></a>
+            <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube">
+              <svg class="social__icon social__icon--youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+            </a>
           </li>
         </ul>
       </div>

@@ -10,30 +10,22 @@
   align-items: center;
   height: 48px;
   width: 48px;
+}
 
-  &--twitter,
-  &--facebook,
-  &--youtube {
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--twitter:active,
-  &--facebook:active,
-  &--youtube:active {
-    opacity: 0.3;
-  }
-
+.social__icon {
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+    width: 14.5px;
+    height: 17.5px;
   }
 
   &--facebook {
-    background-image: url("../img/icon-facebook.svg");
+    width: 9px;
+    height: 19px;
   }
 
   &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+    width: 20px;
+    height: 14px;
   }
 }
 
@@ -51,5 +43,9 @@
 
   &:active {
     background-color: $color__primary--darker;
+  }
+
+  &:active svg {
+    opacity: 0.3;
   }
 }
