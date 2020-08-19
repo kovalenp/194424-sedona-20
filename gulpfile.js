@@ -20,6 +20,14 @@ const clean = () => {
 
 exports.clean = clean;
 
+// Clean
+
+const sourceCssClean = () => {
+  return del("source/css");
+};
+
+exports.sourceCssClean = sourceCssClean;
+
 // Copy artifacts
 
 const copy = () => {
@@ -108,7 +116,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles, sourceCssClean));
   gulp.watch("source/*.html", gulp.series(html));
   gulp.watch("source/*.html").on("change", sync.reload);
 };

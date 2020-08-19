@@ -61,6 +61,9 @@
         <h2 class="visually-hidden">Фото</h2>
         <div class="photo-gallery__item photo">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x" />
+            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x" />
             <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x" />
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x" />
             <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фото закат" />
@@ -71,6 +74,9 @@
         </div>
         <div class="photo-gallery__item photo">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x" />
+            <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x" />
             <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x" />
             <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x" />
             <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото кактус" />
@@ -81,6 +87,9 @@
         </div>
         <div class="photo-gallery__item photo">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x" />
+            <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x" />
             <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x" />
             <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x" />
             <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото дороги" />
@@ -91,6 +100,9 @@
         </div>
         <div class="photo-gallery__item photo">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x" />
+            <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x" />
             <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x" />
             <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x" />
             <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото скала" />
@@ -128,13 +140,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter"></a>
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">
+              <svg class="social__icon social__icon--twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Facebook"></a>
+            <a class="social__link" href="https://facebook.com/htmlacademy" aria-label="Facebook">
+              <svg class="social__icon social__icon--facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube"></a>
+            <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Youtube">
+              <svg class="social__icon social__icon--youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+            </a>
           </li>
         </ul>
       </div>

@@ -57,7 +57,8 @@
   }
 
   @include tablet {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left center right";
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

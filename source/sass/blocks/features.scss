@@ -6,7 +6,6 @@
 
 .feature__wrapper {
   display: flex;
-  margin-top: 7%;
 
   @include tablet {
     flex-direction: column;
@@ -16,6 +15,24 @@
   &:last-child {
     @include mobile {
       margin-bottom: 7%;
+    }
+  }
+
+  &--left {
+    @include tablet {
+      grid-area: left;
+    }
+  }
+
+  &--center {
+    @include tablet {
+      grid-area: center;
+    }
+  }
+
+  &--right {
+    @include tablet {
+      grid-area: right;
     }
   }
 }
@@ -42,43 +59,41 @@
   background-position: center;
   margin: 0 3%;
   margin-top: -3%;
+  fill: $color__primary;
 
-  &--living {
-    background-image: url("../img/icon-house.svg");
+  &--house {
     width: 39px;
     height: 37px;
-    background-size: 39px 37px;
 
     @include tablet {
       width: 75px;
       height: 72px;
-      background-size: 75px 72px;
+      margin-top: 60px;
+      margin-bottom: 25px;
     }
   }
 
   &--gift {
-    background-image: url("../img/icon-gift.svg");
     width: 32px;
     height: 38px;
-    background-size: 32px 38px;
 
     @include tablet {
       width: 64px;
       height: 75px;
-      background-size: 64px 75px;
+      margin-top: 57px;
+      margin-bottom: 25px;
     }
   }
 
-  &--food {
-    background-image: url("../img/icon-burger.svg");
+  &--burger {
     width: 40px;
     height: 35px;
-    background-size: 40px 35px;
 
     @include tablet {
       width: 76px;
       height: 68px;
-      background-size: 76px 68px;
+      margin-top: 63px;
+      margin-bottom: 25px;
     }
   }
 }
