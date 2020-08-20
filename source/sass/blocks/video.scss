@@ -26,11 +26,22 @@
   justify-content: center;
 }
 
-.progress-bar {
+.progress-bar__line {
+  position: relative;
   width: 235px;
   height: 3px;
+  background-color: rgba($color: $color__primary-text, $alpha: 0.2);
+}
+
+.progress-bar__dot {
+  z-index: 5;
+  position: absolute;
+  left: 20%;
+  bottom: -5px;
+  width: 13px;
+  height: 13px;
   background-color: $color__primary-text;
-  opacity: 0.2;
+  border-radius: 50%;
 }
 
 .video__control-bar {
