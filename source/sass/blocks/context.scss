@@ -18,11 +18,23 @@
   padding: 0 15px;
   padding-top: 45px;
   width: 90%;
+
+  &--photo {
+    padding: 0;
+    padding-top: 32px;
+  }
 }
 
 .context__description {
   width: 90%;
   padding: 30px 0;
+
+  &--photo {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    width: 86%;
+  }
 }
 
 .context__mask {

@@ -13,11 +13,12 @@
 @import "./blocks/page-header.scss";
 @import "./blocks/page-intro.scss";
 @import "./blocks/page-footer.scss";
-@import "./blocks/photo-gallery.scss";
+@import "./blocks/photo.scss";
 @import "./blocks/reasons.scss";
 @import "./blocks/review.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
+@import "./blocks/video.scss";
 
 .js-invisible {
   @include mobile {

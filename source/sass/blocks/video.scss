@@ -1,0 +1,35 @@
+.video {
+  margin: 0 auto;
+}
+
+.video-gallery__video {
+  margin-top: 5px;
+  margin-bottom: 115px;
+}
+
+.video__stream {
+  z-index: 1;
+  position: relative;
+}
+
+.video__progress-bar {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3px;
+  width: 280px;
+  height: 45px;
+  background-color: rgba($color: $color__menu-text, $alpha: 0.3);
+}
+
+.video__control-bar {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -63px;
+  width: 280px;
+  height: 66px;
+  background-color: $color__neutral;
+}

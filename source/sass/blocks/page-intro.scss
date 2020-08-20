@@ -36,8 +36,8 @@
 }
 
 .page-intro__background--min {
-  min-height: 160px;
-  background-position: center -215px;
+  min-height: 159px;
+  background-position: center -230px;
 
   @include tablet {
     min-height: 300px;
@@ -76,7 +76,7 @@
 
 .page-intro__mask {
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
 
