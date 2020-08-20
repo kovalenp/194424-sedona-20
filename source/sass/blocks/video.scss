@@ -21,6 +21,16 @@
   width: 280px;
   height: 45px;
   background-color: rgba($color: $color__menu-text, $alpha: 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 235px;
+  height: 3px;
+  background-color: $color__primary-text;
+  opacity: 0.2;
 }
 
 .video__control-bar {
