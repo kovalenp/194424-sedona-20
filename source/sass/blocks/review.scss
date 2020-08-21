@@ -6,13 +6,31 @@
   grid-area: contacts;
 }
 
-.review__impressions {
+.review-impressions {
   grid-area: impressions;
 }
 
-// .review__sightseeing {
-//   grid-area: sightseeing;
-// }
+.review-impressions__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 200px;
+}
+
+.review-sightseeing {
+  grid-area: sightseeing;
+}
+
+.review-sightseeing__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 80px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
 
 .review__text {
   grid-area: text;

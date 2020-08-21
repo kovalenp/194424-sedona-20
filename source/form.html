@@ -86,49 +86,54 @@
               <input class="review-section__input" type="email" name="email" placeholder="Введите e-mail" />
             </label>
           </fieldset>
-          <fieldset class="review__impressions review-section">
+          <fieldset class="review-section review-impressions">
             <legend class="review-section__title">Ваше Общее впечатление:</legend>
-            <label class="review-section__label">
-              Скорее положительное
-              <input class="review-section__radio" type="radio" name="positive" value="positive" checked />
-            </label>
-            <label class="review-section__label">
-              Скорее отрицательное
-              <input class="review-section__radio" type="radio" name="negative" value="negative" />
-            </label>
-            <label class="review-section__label">
-              Затрудняюсь ответить
-              <input class="review-section__radio" type="radio" name="neutral" value="neutral" />
-            </label>
+            <div class="review-impressions__wrapper">
+              <label class="review-impressions__check check">
+                <input class="check__input" type="radio" id="positive" value="positive" name="impressions" checked />
+                <span class="check__icon check__icon--radio"></span>
+                Скорее положительное
+              </label>
+              <label class="review-impressions__check check">
+                <input class="check__input" type="radio" id="negative" value="negative" name="impressions" />
+                <span class="check__icon check__icon--radio"></span>
+                Скорее отрицательное
+              </label>
+              <label class="review-impressions__check check">
+                <input class="check__input" type="radio" id="neutral" value="neutral" name="impressions" />
+                <span class="check__icon check__icon--radio"></span>
+                Затрудняюсь ответить
+              </label>
+            </div>
           </fieldset>
-          <fieldset class="review-section sightseeing">
+          <fieldset class="review-section review-sightseeing">
             <legend class="review-section__title">посещенные достопримечательности:</legend>
-            <div class="sightseeing__wrapper">
-              <label class="sightseeing__check">
-                <input class="sightseeing__input" type="checkbox" name="devil_bridge" checked />
-                <span class="sightseeing__checkbox">
-                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+            <div class="review-sightseeing__wrapper">
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="devil_bridge" checked />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
                 </span>
                 Мост Дьявола
               </label>
-              <label class="sightseeing__check">
-                <input class="sightseeing__input" type="checkbox" name="bell_mountain" checked />
-                <span class="sightseeing__checkbox">
-                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="bell_mountain" checked />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
                 </span>
                 Гора-Колокол
               </label>
-              <label class="sightseeing__check">
-                <input class="sightseeing__input" type="checkbox" name="side_park" checked />
-                <span class="sightseeing__checkbox">
-                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="side_park" checked />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
                 </span>
                 Слайд-парк
               </label>
-              <label class="sightseeing__check">
-                <input class="sightseeing__input" type="checkbox" name="red_rocks" />
-                <span class="sightseeing__checkbox">
-                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="red_rocks" />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
                 </span>
                 Красные скалы
               </label>
