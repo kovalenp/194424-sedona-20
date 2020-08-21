@@ -18,6 +18,7 @@
 @import "./blocks/review.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
+@import "./blocks/sightseeing.scss";
 @import "./blocks/video.scss";
 
 .js-invisible {
@@ -48,6 +49,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+picture {
+  line-height: 0;
 }
 
 .title {

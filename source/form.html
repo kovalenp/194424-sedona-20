@@ -101,36 +101,45 @@
               <input class="review-section__radio" type="radio" name="neutral" value="neutral" />
             </label>
           </fieldset>
-          <fieldset class="review__sightseeing review-section">
+          <fieldset class="review-section sightseeing">
             <legend class="review-section__title">посещенные достопримечательности:</legend>
-            <label class="review-section__label">
-              Мост Дьявола
-              <input class="review-section__checkbox" type="checkbox" name="devil_bridge" checked />
-            </label>
-            <label class="review__box-label">
-              Гора-Колокол
-              <input class="review-section__checkbox" type="checkbox" name="bell_mountain" checked />
-            </label>
-            <label class="review__box-label">
-              Слайд-парк
-              <input class="review-section__checkbox" type="checkbox" name="side_park" checked />
-            </label>
-            <label class="review__box-label">
-              Красные скалы
-              <input class="review-section__checkbox" type="checkbox" name="red_rocks" />
-            </label>
+            <div class="sightseeing__wrapper">
+              <label class="sightseeing__check">
+                <input class="sightseeing__input" type="checkbox" name="devil_bridge" checked />
+                <span class="sightseeing__checkbox">
+                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Мост Дьявола
+              </label>
+              <label class="sightseeing__check">
+                <input class="sightseeing__input" type="checkbox" name="bell_mountain" checked />
+                <span class="sightseeing__checkbox">
+                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Гора-Колокол
+              </label>
+              <label class="sightseeing__check">
+                <input class="sightseeing__input" type="checkbox" name="side_park" checked />
+                <span class="sightseeing__checkbox">
+                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Слайд-парк
+              </label>
+              <label class="sightseeing__check">
+                <input class="sightseeing__input" type="checkbox" name="red_rocks" />
+                <span class="sightseeing__checkbox">
+                  <svg class="sightseeing__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Красные скалы
+              </label>
+            </div>
           </fieldset>
           <fieldset class="review__text review-section">
             <legend class="review-section__title">Опишите свои эмоции:</legend>
             <label for="review-text" class="review-section__label visually-hidden">
               Поле для текста отзыва
             </label>
-            <textarea
-              class="review-section__textarea"
-              id="review-text"
-              name="review-text"
-              placeholder="Опишите подробно все свои восторги "
-            ></textarea>
+            <textarea class="review-section__textarea" id="review-text" name="review-text" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
           <button class="review__button button" type="submit">Отправить отзыв</button>
           <p class="review__footnote">* — обязательные поля</p>
