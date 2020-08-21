@@ -1,6 +1,12 @@
 .feedback {
+  margin: 0 auto;
+  width: 320px;
+
+  @include tablet {
+    width: 648px;
+  }
+
   @include desktop {
-    padding-left: 120px;
-    padding-right: 120px;
+    width: 960px;
   }
 }

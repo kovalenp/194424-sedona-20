@@ -60,30 +60,32 @@
       <section class="feedback">
         <h2 class="visually-hidden">Оставьте свой отзыв</h2>
         <form action="https://echo.htmlacademy.ru" class="feedback__form review" method="GET" autocomplete="off">
-          <fieldset class="review__personal-info review-section">
+          <fieldset class="review-personal-info review-section">
             <legend class="review-section__title">Представьтесь:</legend>
-            <label class="review-section__label" for="input_name">
-              Имя*:
-              <input class="review-section__input" id="input_name" type="text" name="name" placeholder="Петр" />
-            </label>
-            <label class="review-section__label">
-              Фамилия*:
-              <input class="review-section__input" type="text" name="surname" placeholder="Иванов" />
-            </label>
-            <label class="review-section__label">
-              Отчество:
-              <input class="review-section__input" type="text" name="middle_name" placeholder="Александрович" />
-            </label>
+            <div class="review-personal-info__wrapper">
+              <label class="review-personal-info input-filed">
+                Имя*:
+                <input class="input-filed__text" type="text" id="name" name="personal-info" placeholder="Петр" />
+              </label>
+              <label class="review-personal-info input-filed">
+                Фамилия*:
+                <input class="input-filed__text" type="text" id="surname" name="personal-info" placeholder="Иванов" />
+              </label>
+              <label class="review-personal-info input-filed">
+                Отчество:
+                <input class="input-filed__text" type="text" id="middle_name" name="personal-info" placeholder="Александрович" />
+              </label>
+            </div>
           </fieldset>
           <fieldset class="review__contacts review-section">
             <legend class="review-section__title">Контактная информация:</legend>
             <label class="review-section__label">
               Контактный телефон*:
-              <input class="review-section__input" type="tel" name="phone" placeholder="Введите телефон" />
+              <input class="review-section__input input-filed__text" type="tel" name="phone" placeholder="Введите телефон" />
             </label>
             <label class="review-section__label">
               Электронная почта*:
-              <input class="review-section__input" type="email" name="email" placeholder="Введите e-mail" />
+              <input class="review-section__input input-filed__text" type="email" name="email" placeholder="Введите e-mail" />
             </label>
           </fieldset>
           <fieldset class="review-section review-impressions">

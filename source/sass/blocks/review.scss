@@ -1,5 +1,10 @@
-.review__personal-info {
+.review-personal-info {
   grid-area: personal-info;
+}
+
+.review-personal-info__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .review__contacts {
@@ -29,6 +34,22 @@
 
   @include tablet {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.review-sightseeing__check {
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 25%;
   }
 }
 
@@ -51,10 +72,14 @@
 .review {
   display: grid;
   grid-template-rows: auto;
-
-  @include mobile {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "personal-info"
+    "contacts"
+    "impressions"
+    "sightseeing"
+    "text"
+    "button";
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -69,4 +94,9 @@
 
 .review-section {
   border: none;
+}
+
+.review-section__title {
+  font-weight: bold;
+  padding-bottom: 40px;
 }
