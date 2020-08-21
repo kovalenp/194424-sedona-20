@@ -25,6 +25,10 @@
 
 .photo__image {
   margin-top: 22px;
+
+  @include tablet {
+    margin-top: 0;
+  }
 }
 
 .photo-gallery__item {
@@ -50,6 +54,10 @@
       border-bottom: 1px solid $color__neutral--hover;
     }
   }
+
+  @include desktop {
+    position: relative;
+  }
 }
 
 .photo-description {
@@ -58,12 +66,38 @@
   min-height: 109px;
 
   @include font($font-size__description, $line-height--small);
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: $color__neutral;
+    width: 100%;
+  }
+
+  @include desktop {
+    position: absolute;
+    bottom: 0;
+    color: $color__primary-text;
+    background-color: rgba($color: $color__menu-text, $alpha: 0.3);
+  }
+}
+
+.photo-description__text {
+  @include tablet {
+    padding-left: 20px;
+  }
 }
 
 .photo-description__title {
   font-weight: bold;
   padding-top: 9px;
   padding-bottom: 4px;
+
+  @include tablet {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
 }
 
 .photo-description__author {
@@ -73,6 +107,11 @@
 .photo-description__like {
   display: flex;
   padding-top: 12px;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
 }
 
 .photo-likes__icon {
@@ -80,6 +119,11 @@
   height: 21px;
   opacity: 0.3;
   cursor: pointer;
+
+  @include desktop {
+    opacity: 1;
+    fill: $color__primary-text;
+  }
 }
 
 .photo-likes__counter {

@@ -1,5 +1,21 @@
 .video {
   margin: 0 auto;
+
+  @include mobile {
+    width: 320px;
+  }
+}
+
+.video-gallery {
+  @include tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include desktop {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .video-gallery__video {
@@ -26,6 +42,17 @@
   justify-content: center;
 }
 
+.video__control-bar {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -63px;
+  width: 280px;
+  height: 66px;
+  background-color: $color__neutral;
+}
+
 .progress-bar__line {
   position: relative;
   width: 235px;
@@ -42,15 +69,5 @@
   height: 13px;
   background-color: $color__primary-text;
   border-radius: 50%;
-}
-
-.video__control-bar {
-  z-index: 3;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -63px;
-  width: 280px;
-  height: 66px;
-  background-color: $color__neutral;
+  cursor: pointer;
 }
