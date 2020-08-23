@@ -53,10 +53,6 @@ img {
   height: auto;
 }
 
-picture {
-  line-height: 0;
-}
-
 .title {
   @include mobile {
     @include font($font-size__title, $line-height, bold);

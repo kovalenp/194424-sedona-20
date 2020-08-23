@@ -59,10 +59,14 @@
 
 .review__button {
   grid-area: button;
+  min-height: 58px;
 }
 
 .review__footnote {
   grid-area: footnote;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
   @include mobile {
     display: none;
@@ -99,4 +103,20 @@
 .review-section__title {
   font-weight: bold;
   padding-bottom: 40px;
+}
+
+.review-section__textarea {
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  min-height: 160px;
+  border: none;
+  background-color: $color__neutral;
+  color: $color__menu-text;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  &::placeholder {
+    color: $color__menu-text;
+  }
 }

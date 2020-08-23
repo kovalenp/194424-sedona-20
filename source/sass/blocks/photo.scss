@@ -19,10 +19,6 @@
   }
 }
 
-.photo {
-  margin: 0 auto;
-}
-
 .photo__image {
   margin-top: 22px;
 
@@ -57,6 +53,15 @@
 
   @include desktop {
     position: relative;
+  }
+}
+
+.photo__wrapper {
+  line-height: 0;
+
+  @include mobile {
+    margin: 0 auto;
+    width: 280px;
   }
 }
 
