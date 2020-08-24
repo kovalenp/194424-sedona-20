@@ -53,6 +53,10 @@ img {
   height: auto;
 }
 
+fieldset {
+  padding: 0;
+}
+
 .title {
   @include mobile {
     @include font($font-size__title, $line-height, bold);
