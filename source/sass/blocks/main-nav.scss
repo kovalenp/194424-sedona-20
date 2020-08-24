@@ -97,3 +97,16 @@
     width: 1200px;
   }
 }
+
+.main-nav__close {
+  @include tablet {
+    display: none;
+  }
+
+  position: absolute;
+  right: 7%;
+  fill: white;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
