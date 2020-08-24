@@ -8,40 +8,64 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    height: 93px;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgba($color: $color__menu-text, $alpha: 0.6);
+  }
 }
 
 .control__icon {
   fill: #5c6870;
 
+  @include tablet {
+    fill: white;
+  }
+
   &--replay {
     width: 16px;
     height: 20px;
-    margin-left: 20px;
+
+    @include mobile {
+      margin-left: 20px;
+    }
   }
 
   &--video-subtitles {
     width: 32px;
     height: 20px;
-    margin-left: 170px;
+
+    @include mobile {
+      margin-left: 170px;
+    }
   }
 
   &--video-fullscreen {
     width: 20px;
     height: 20px;
-    margin-left: 10px;
+
+    @include mobile {
+      margin-left: 10px;
+    }
   }
 }
 
 .control__progress-bar {
-  z-index: 3;
-  position: absolute;
-  top: -45px;
-  min-height: 45px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba($color: $color__menu-text, $alpha: 0.3);
+  @include mobile {
+    z-index: 3;
+    position: absolute;
+    top: -45px;
+    min-height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: $color__menu-text, $alpha: 0.6);
+  }
 }
 
 .progress-bar__line {
@@ -49,6 +73,14 @@
   width: 235px;
   height: 3px;
   background-color: rgba($color: $color__primary-text, $alpha: 0.2);
+
+  @include tablet {
+    width: 389px;
+  }
+
+  @include desktop {
+    width: 540px;
+  }
 }
 
 .progress-bar__dot {

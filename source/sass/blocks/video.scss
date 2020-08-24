@@ -26,4 +26,8 @@
 .video__stream {
   z-index: 1;
   line-height: 0;
+
+  @include tablet {
+    position: relative;
+  }
 }
