@@ -85,6 +85,10 @@
 }
 
 .main-nav__wrapper {
+  @include mobile {
+    position: relative;
+  }
+
   @include tablet {
     display: flex;
     width: 100%;
@@ -92,8 +96,6 @@
   }
 
   @include desktop {
-    display: flex;
-    justify-content: space-between;
     width: 1200px;
   }
 }

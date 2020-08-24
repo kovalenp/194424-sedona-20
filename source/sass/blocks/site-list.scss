@@ -39,6 +39,24 @@
       margin-right: 0;
     }
   }
+
+  &:hover {
+    @include mobile {
+      background-color: $color__primary--hover;
+    }
+  }
+
+  &:active {
+    @include mobile {
+      background-color: $color__primary--darker;
+    }
+  }
+
+  &:active .site-list__item-menu {
+    @include mobile {
+      color: $color__menu-text--light;
+    }
+  }
 }
 
 .site-list__item-menu {
@@ -73,6 +91,36 @@
   &--main {
     @include mobile {
       position: relative;
+    }
+  }
+
+  &:hover {
+    @include tablet {
+      color: $color__menu-text--hover;
+    }
+  }
+
+  &:active {
+    @include tablet {
+      color: $color__menu-text--light;
+    }
+  }
+
+  &--active {
+    @include tablet {
+      color: $color__accent-text;
+    }
+
+    &:hover {
+      @include tablet {
+        color: $color__accent-text--hover;
+      }
+    }
+
+    &:active {
+      @include tablet {
+        color: $color__accent-text--light;
+      }
     }
   }
 }
