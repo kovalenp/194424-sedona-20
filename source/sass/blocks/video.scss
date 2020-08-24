@@ -25,53 +25,5 @@
 
 .video__stream {
   z-index: 1;
-}
-
-// .video__progress-bar {
-//   z-index: 3;
-//   position: absolute;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   bottom: 3px;
-//   width: 280px;
-//   height: 45px;
-//   background-color: rgba($color: $color__menu-text, $alpha: 0.3);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-.video__control-bar {
-  z-index: 3;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 280px;
-  height: 66px;
-  background-color: rgba($color: $color__menu-text, $alpha: 0.3);
-  display: flex;
-  justify-content: space-between;
-}
-
-.progress-bar__line {
-  position: relative;
-  width: 235px;
-  height: 3px;
-  background-color: rgba($color: $color__primary-text, $alpha: 0.2);
-}
-
-.progress-bar__dot {
-  z-index: 5;
-  position: absolute;
-  left: 20%;
-  bottom: -5px;
-  width: 13px;
-  height: 13px;
-  background-color: $color__primary-text;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.control__icon {
-  width: 16px;
-  height: 20px;
+  line-height: 0;
 }

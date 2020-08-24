@@ -1,0 +1,64 @@
+.control {
+  z-index: 3;
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 66px;
+  background-color: $color__neutral;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.control__icon {
+  fill: #5c6870;
+
+  &--replay {
+    width: 16px;
+    height: 20px;
+    margin-left: 20px;
+  }
+
+  &--video-subtitles {
+    width: 32px;
+    height: 20px;
+    margin-left: 170px;
+  }
+
+  &--video-fullscreen {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}
+
+.control__progress-bar {
+  z-index: 3;
+  position: absolute;
+  top: -45px;
+  min-height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: $color__menu-text, $alpha: 0.3);
+}
+
+.progress-bar__line {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba($color: $color__primary-text, $alpha: 0.2);
+}
+
+.progress-bar__dot {
+  z-index: 5;
+  position: absolute;
+  left: 20%;
+  bottom: -5px;
+  width: 13px;
+  height: 13px;
+  background-color: $color__primary-text;
+  border-radius: 50%;
+  cursor: pointer;
+}
