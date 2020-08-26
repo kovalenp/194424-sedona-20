@@ -105,28 +105,23 @@
   }
 }
 
-.main-nav__close {
+.toggle__icon {
+  position: absolute;
+  right: 20px;
+  height: 22px;
+  cursor: pointer;
+
   @include tablet {
     display: none;
   }
 
-  position: absolute;
-  right: 20px;
-  fill: $color__primary-text;
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-}
-
-.main-nav__open {
-  @include tablet {
-    display: none;
+  &--open {
+    fill: $color__primary;
+    width: 22px;
   }
 
-  position: absolute;
-  right: 20px;
-  fill: $color__primary;
-  width: 23px;
-  height: 22px;
-  cursor: pointer;
+  &--close {
+    fill: $color__primary-text;
+    width: 23px;
+  }
 }
