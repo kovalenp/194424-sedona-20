@@ -54,12 +54,16 @@
 
 .main-nav__toggle {
   z-index: 3;
-  position: relative;
+  position: absolute;
   margin-bottom: 31px;
-  left: 87%;
-  top: 18px;
+  right: 20px;
+  top: 15px;
   border: 0;
   background-color: $color__primary-text;
+
+  &:focus {
+    outline: 0;
+  }
 
   @include tablet {
     display: none;
@@ -87,6 +91,7 @@
 .main-nav__wrapper {
   @include mobile {
     position: relative;
+    min-height: 56px;
   }
 
   @include tablet {
@@ -107,8 +112,21 @@
 
   position: absolute;
   right: 20px;
-  fill: white;
+  fill: $color__primary-text;
   width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.main-nav__open {
+  @include tablet {
+    display: none;
+  }
+
+  position: absolute;
+  right: 20px;
+  fill: $color__primary;
+  width: 23px;
   height: 22px;
   cursor: pointer;
 }

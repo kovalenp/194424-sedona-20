@@ -13,7 +13,6 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__item-menu site-list__item-menu--active site-list__item-menu--main" href="#">Главная</a>
-              <svg class="main-nav__close"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
             </li>
             <li class="site-list__item">
               <a class="site-list__item-menu" href="./photo.html">Фото и Видео</a>
@@ -35,7 +34,9 @@
             </a>
           </div>
           <button class="main-nav__toggle" type="button">
-            <img src="./img/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
+            <!-- <img src="./img/icon-menu.svg" width="23" height="22" alt="Открыть меню" /> -->
+            <svg class="main-nav__open"><use xlink:href="img/sprite.svg#icon-menu"></use></svg>
+            <svg class="main-nav__close"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
           </button>
         </div>
       </nav>
@@ -51,12 +52,8 @@
     <main class="page-main">
       <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
       <div class="context">
-        <p class="context__title title">
-          СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-        <p class="context__description description">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
+        <p class="context__title title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="context__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <div class="context__mask"></div>
       </div>
       <section class="reasons">
@@ -65,9 +62,7 @@
           <div class="reason reason--highlight">
             <h3 class="reason__title title">Настоящий городок</h3>
             <p class="reason__count description">— №1 —</p>
-            <p class="reason__description description">
-              Седона не аттракцион для туристов, там течёт своя жизнь
-            </p>
+            <p class="reason__description description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="reasons__image">
             <picture>
@@ -85,27 +80,21 @@
             <svg class="feature__icon feature__icon--house"><use xlink:href="img/sprite.svg#icon-house"></use></svg>
             <div class="feature__item">
               <h3 class="feature__title title">Жильё</h3>
-              <p class="feature__description description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+              <p class="feature__description description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
           </li>
           <li class="feature__wrapper feature__wrapper--right">
             <svg class="feature__icon feature__icon--gift"><use xlink:href="img/sprite.svg#icon-gift"></use></svg>
             <div class="feature__item">
               <h3 class="feature__title title">Сувениры</h3>
-              <p class="feature__description description">
-                Не только китайского, но и местного производства!
-              </p>
+              <p class="feature__description description">Не только китайского, но и местного производства!</p>
             </div>
           </li>
           <li class="feature__wrapper feature__wrapper--center">
             <svg class="feature__icon feature__icon--burger"><use xlink:href="img/sprite.svg#icon-burger"></use></svg>
             <div class="feature__item">
               <h3 class="feature__title title">Еда</h3>
-              <p class="feature__description description">
-                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-              </p>
+              <p class="feature__description description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
         </ul>
@@ -113,9 +102,7 @@
           <div class="reason reason--highlight reason--reverted">
             <h3 class="reason__title title">Там есть Мост дьявола</h3>
             <p class="reason__count description">— №2 —</p>
-            <p class="reason__description description">
-              Да, по нему можно пройти! Если вы осмелитесь, конечно
-            </p>
+            <p class="reason__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="reasons__image">
             <picture>
@@ -132,35 +119,25 @@
           <div class="reason reason--accent">
             <h3 class="reason__title title">Небольшая площадь</h3>
             <p class="reason__count description">— №3 —</p>
-            <p class="reason__description description">
-              Все достопримечательности находятся очень близко
-            </p>
+            <p class="reason__description description">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="reason reason--accent">
             <h3 class="reason__title title">Красивая дорога</h3>
             <p class="reason__count description">— №4 —</p>
-            <p class="reason__description description">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
+            <p class="reason__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="reason reason--accent">
             <h3 class="reason__title title">Мало туристов</h3>
             <p class="reason__count description">— №5 —</p>
-            <p class="reason__description description">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
+            <p class="reason__description description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
       </section>
       <section class="page-booking">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <div class="page-booking__context context">
-          <p class="context__title title">
-            Заинтересовались?
-          </p>
-          <p class="context__description description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-          </p>
+          <p class="context__title title">Заинтересовались?</p>
+          <p class="context__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <button class="page-booking__button button" type="button"><span class="button-text">Найти гостиницу</span></button>
         <div class="page-booking__map">
