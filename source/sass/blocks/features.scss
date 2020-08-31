@@ -6,6 +6,7 @@
 
 .feature__wrapper {
   display: flex;
+  min-height: 130px;
 
   @include tablet {
     flex-direction: column;
@@ -45,6 +46,7 @@
 
   @include mobile {
     width: 75%;
+    padding-top: 35px;
   }
 
   @include tablet {
@@ -57,8 +59,9 @@
 .feature__icon {
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 3%;
-  margin-top: -3%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
   fill: $color__primary;
 
   &--house {
