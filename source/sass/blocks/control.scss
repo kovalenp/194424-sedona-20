@@ -20,10 +20,10 @@
 }
 
 .control__icon {
-  fill: #5c6870;
+  fill: $color__control__element;
 
   @include tablet {
-    fill: white;
+    fill: $color__primary-text;
   }
 
   &--replay {
