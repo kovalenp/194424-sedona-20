@@ -6,6 +6,7 @@
   @include mobile {
     flex-direction: column;
     min-height: 233px;
+    margin-top: 10px;
   }
 
   @include tablet {

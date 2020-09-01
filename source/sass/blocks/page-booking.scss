@@ -2,7 +2,8 @@
   @include font($font-size__title--large, $line-height, bold);
   width: 280px;
   height: 58px;
-  margin: 15px 32px;
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .page-booking {

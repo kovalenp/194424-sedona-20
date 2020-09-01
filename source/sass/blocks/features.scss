@@ -6,16 +6,22 @@
 
 .feature__wrapper {
   display: flex;
-  min-height: 130px;
+  min-height: 100px;
 
   @include tablet {
     flex-direction: column;
     align-items: center;
   }
 
+  &:first-child {
+    @include mobile {
+      margin-top: 4px;
+    }
+  }
+
   &:last-child {
     @include mobile {
-      margin-bottom: 7%;
+      margin-bottom: 33px;
     }
   }
 
@@ -46,7 +52,6 @@
 
   @include mobile {
     width: 75%;
-    padding-top: 35px;
   }
 
   @include tablet {
@@ -56,10 +61,19 @@
   }
 }
 
+.feature__title {
+  margin-top: 30px;
+}
+
+.feature__description {
+  margin-top: 15px;
+  width: 90%;
+}
+
 .feature__icon {
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-left: 20px;
   margin-right: 10px;
   fill: $color__primary;
@@ -79,6 +93,12 @@
   &--gift {
     width: 32px;
     height: 38px;
+
+    @include mobile {
+      margin-top: 19px;
+      margin-left: 25px;
+      margin-right: 13px;
+    }
 
     @include tablet {
       width: 64px;

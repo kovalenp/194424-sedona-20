@@ -22,6 +22,12 @@
     padding: 0;
     padding-top: 32px;
   }
+
+  &--booking {
+    @include font($font-size__title--large, $line-height, bold);
+    padding-bottom: 22px;
+    padding-top: 35px;
+  }
 }
 
 .context__description {
@@ -33,6 +39,10 @@
     padding-top: 24px;
     padding-bottom: 28px;
     width: 86%;
+  }
+
+  &--booking {
+    @include font($font-size__description, $line-height--medium, normal);
   }
 }
 

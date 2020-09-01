@@ -31,9 +31,7 @@ exports.sourceCssClean = sourceCssClean;
 // Copy artifacts
 
 const copy = () => {
-  return gulp
-    .src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/js/**", "source/**/*.html"], { base: "source" })
-    .pipe(gulp.dest("build"));
+  return gulp.src(["source/fonts/**/*.{woff,woff2}", "source/img/**", "source/js/**", "source/**/*.html"], { base: "source" }).pipe(gulp.dest("build"));
 };
 
 exports.copy = copy;
@@ -118,6 +116,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles, sourceCssClean));
   gulp.watch("source/*.html", gulp.series(html));
+  gulp.watch("source/js/*.js", gulp.series(copy));
   gulp.watch("source/*.html").on("change", sync.reload);
 };
 
