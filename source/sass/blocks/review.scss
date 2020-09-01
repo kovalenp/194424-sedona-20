@@ -1,3 +1,7 @@
+.review {
+  width: 320px;
+}
+
 .review-personal-info {
   grid-area: personal-info;
 }
@@ -22,10 +26,7 @@
 
 .review-contacts__wrapper {
   display: flex;
-
-  @include tablet {
-    flex-direction: column;
-  }
+  flex-direction: column;
 
   @include desktop {
     flex-direction: row;
@@ -38,9 +39,19 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+}
 
-  &--phone {
-    content: "TEST";
+.review-contacts__input--phone {
+  @include desktop {
+    display: none;
+  }
+}
+
+.review-contacts__input--phone-desktop {
+  display: none;
+
+  @include desktop {
+    display: block;
   }
 }
 
@@ -132,6 +143,17 @@
 
 .review-section {
   border: none;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    border-top: 1px solid gray;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .review-section__title {

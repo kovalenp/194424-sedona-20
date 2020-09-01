@@ -73,7 +73,7 @@ fieldset {
 }
 
 .description {
-  @include font($font-size__description, $line-height--small);
+  @include font($font-size__description, $line-height--medium);
 
   &--main {
     @include font($font-size__description, $line-height);

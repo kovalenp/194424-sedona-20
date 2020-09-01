@@ -79,14 +79,11 @@
           <fieldset class="review-contacts review-section">
             <legend class="review-section__title">Контактная информация:</legend>
             <div class="review-contacts__wrapper">
-              <label class="review-contacts__input review-contacts__input--phone input-field">
-                <!-- Контактный телефон*: -->
-                <input class="input-field__text" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
-              </label>
-              <label class="review-contacts__input review-contacts__input--email input-field">
-                <!-- Электронная почта*: -->
-                <input class="input-field__text" name="email" id="email" placeholder="Введите e-mail" />
-              </label>
+              <label class="review-contacts__input review-contacts__input--phone input-field" for="phone"> Контактный телефон*: </label>
+              <label class="review-contacts__input review-contacts__input--phone-desktop input-field" for="phone"> Телефон*: </label>
+              <input class="input-field__text" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
+              <label class="review-contacts__input review-contacts__input--email input-field" for="email">Электронная почта*:</label>
+              <input class="input-field__text" name="email" id="email" placeholder="Введите e-mail" />
             </div>
           </fieldset>
           <fieldset class="review-section review-impressions">
