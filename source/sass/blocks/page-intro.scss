@@ -40,8 +40,13 @@
   background-position: center -230px;
 
   @include tablet {
-    min-height: 300px;
-    background-position: center -215px;
+    min-height: 290px;
+    background-position: center -228px;
+  }
+
+  @include desktop {
+    min-height: 301px;
+    background-position: center -216px;
   }
 }
 

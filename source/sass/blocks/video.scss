@@ -19,8 +19,16 @@
 }
 
 .video-gallery__video {
-  margin-top: 5px;
-  margin-bottom: 115px;
+  margin-bottom: 55px;
+
+  @include tablet {
+    margin-bottom: 41px;
+    margin-top: 39px;
+  }
+
+  @include desktop {
+    margin-bottom: 87px;
+  }
 }
 
 .video__stream {

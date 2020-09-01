@@ -9,6 +9,7 @@
   @include tablet {
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    margin-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -68,7 +69,7 @@
 .photo-description {
   display: flex;
   flex-direction: column;
-  min-height: 109px;
+  min-height: 112px;
 
   @include font($font-size__description, $line-height--small);
 
@@ -111,11 +112,10 @@
 
 .photo-description__like {
   display: flex;
-  padding-top: 12px;
+  align-items: center;
 
   @include tablet {
-    padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
   }
 }
 

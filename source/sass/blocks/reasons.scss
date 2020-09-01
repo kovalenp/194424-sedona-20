@@ -41,9 +41,14 @@
   background-color: $color__secondary;
 
   @include mobile {
-    &:not(:last-child) {
+    position: relative;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      bottom: 0;
       content: "";
       border-bottom: 1px solid $color__border;
+      width: 90%;
     }
 
     min-height: 167px;
@@ -99,9 +104,12 @@
 
 .reasons__image {
   line-height: 0;
+  background-color: $color__neutral--darker;
 
   @include mobile {
     margin: 0 auto;
+    min-height: 260px;
+    min-width: 320px;
   }
 
   @include desktop {

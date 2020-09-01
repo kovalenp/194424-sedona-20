@@ -30,7 +30,28 @@
 
   &--photo {
     padding: 0;
-    padding-top: 32px;
+    padding-top: 23px;
+
+    @include tablet {
+      padding: 0;
+      margin-top: 64px;
+      @include font($font-size__title--xlarge, $line-height, bold);
+    }
+
+    @include desktop {
+      margin-top: 104px;
+    }
+  }
+
+  &--video {
+    padding: 0;
+    padding-top: 33px;
+
+    @include tablet {
+      padding: 0;
+      margin-top: 56px;
+      @include font($font-size__title--xlarge, $line-height, bold);
+    }
   }
 
   &--booking {
@@ -57,8 +78,15 @@
 
   &--photo {
     padding: 0;
-    padding-top: 24px;
-    padding-bottom: 28px;
+    padding-top: 38px;
+    padding-bottom: 45px;
+    width: 86%;
+  }
+
+  &--video {
+    padding: 0;
+    padding-top: 41px;
+    padding-bottom: 39px;
     width: 86%;
   }
 
