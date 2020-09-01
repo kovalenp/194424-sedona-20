@@ -32,6 +32,12 @@
     @include font($font-size__title--large, $line-height, bold);
     padding-bottom: 22px;
     padding-top: 35px;
+
+    @include tablet {
+      @include font($font-size__title--xlarge, $line-height, bold);
+      padding: 0;
+      margin-top: 15px;
+    }
   }
 }
 
@@ -53,6 +59,10 @@
 
   &--booking {
     @include font($font-size__description, $line-height--medium, normal);
+
+    @include tablet {
+      width: 76%;
+    }
   }
 }
 
