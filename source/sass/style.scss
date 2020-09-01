@@ -75,7 +75,7 @@ fieldset {
 .description {
   @include font($font-size__description, $line-height--small);
 
-  &--title {
+  &--main {
     @include font($font-size__description, $line-height);
   }
 }

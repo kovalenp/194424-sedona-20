@@ -20,6 +20,10 @@
       min-height: 227px;
     }
   }
+
+  @include tablet {
+    justify-content: flex-start;
+  }
 }
 
 .reason--highlight {
@@ -77,13 +81,13 @@
 
   @include tablet {
     grid-template-columns: 1fr 2fr;
-    max-height: 256px;
+    min-height: 256px;
   }
 
   &--reverted {
     @include tablet {
       grid-template-columns: 2fr 1fr;
-      max-height: 256px;
+      min-height: 256px;
     }
   }
 }
@@ -101,6 +105,11 @@
 }
 
 .reason__title {
+  @include tablet {
+    margin-top: 40px;
+    width: 60%;
+  }
+
   &--decorated {
     margin-top: 33px;
   }
@@ -115,5 +124,16 @@
 
   &--accent {
     width: 80%;
+  }
+
+  &--decorated {
+    @include tablet {
+      width: 90%;
+    }
+  }
+
+  @include tablet {
+    margin-top: 26px;
+    width: 75%;
   }
 }

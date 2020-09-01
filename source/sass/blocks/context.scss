@@ -18,6 +18,11 @@
   padding: 32px 15px;
   width: 90%;
 
+  @include tablet {
+    padding: 0;
+    margin-top: 20px;
+  }
+
   &--photo {
     padding: 0;
     padding-top: 32px;
@@ -33,6 +38,11 @@
 .context__description {
   width: 90%;
   padding-bottom: 10px;
+
+  @include tablet {
+    width: 100%;
+    padding: 0;
+  }
 
   &--photo {
     padding: 0;
