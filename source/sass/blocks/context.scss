@@ -23,6 +23,11 @@
     margin-top: 20px;
   }
 
+  @include desktop {
+    margin-top: 30px;
+    width: 70%;
+  }
+
   &--photo {
     padding: 0;
     padding-top: 32px;
@@ -62,6 +67,10 @@
 
     @include tablet {
       width: 76%;
+    }
+
+    @include desktop {
+      width: 50%;
     }
   }
 }

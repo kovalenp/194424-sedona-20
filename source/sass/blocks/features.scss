@@ -76,6 +76,10 @@
   @include tablet {
     margin-top: 25px;
   }
+
+  @include desktop {
+    width: 70%;
+  }
 }
 
 .feature__icon {

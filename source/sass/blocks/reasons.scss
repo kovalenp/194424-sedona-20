@@ -82,6 +82,11 @@
   @include tablet {
     grid-template-columns: 1fr 2fr;
     min-height: 256px;
+    min-width: 768px;
+  }
+
+  @include desktop {
+    max-height: 256px;
   }
 
   &--reverted {
@@ -110,8 +115,16 @@
     width: 60%;
   }
 
+  @include desktop {
+    width: 38%;
+  }
+
   &--decorated {
     margin-top: 33px;
+
+    @include desktop {
+      margin-top: 47px;
+    }
   }
 }
 
