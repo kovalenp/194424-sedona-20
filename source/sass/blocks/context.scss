@@ -92,6 +92,10 @@
     width: 86%;
   }
 
+  &--form {
+    padding-bottom: 14px;
+  }
+
   &--booking {
     @include font($font-size__description, $line-height--medium, normal);
 

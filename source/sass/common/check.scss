@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   text-transform: none;
-  padding-bottom: 54px;
-  padding-left: 70px;
+  padding-bottom: 42px;
+  padding-left: 78px;
+
+  @include font($font-size__title, $line-height, bold);
 
   &:hover .check__icon {
     background-color: $color__neutral--hover;
@@ -33,11 +35,11 @@
   justify-content: center;
   align-items: center;
   appearance: none;
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   background: $color__neutral;
   border: 5px solid $color__neutral;
-  margin-left: -60px;
+  margin-left: -74px;
 
   &--radio {
     border-radius: 50%;
@@ -45,6 +47,8 @@
 
   &--checkbox {
     border-radius: 5px;
+    box-sizing: content-box;
+    margin-left: -79px;
   }
 }
 
@@ -60,8 +64,8 @@
 
 .check__input:checked + .check__icon--radio::after {
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: $color__menu-text;
 }

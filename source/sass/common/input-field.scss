@@ -1,5 +1,6 @@
 .input-field {
   padding-bottom: 20px;
+  font-size: 14px;
 }
 
 .input-field__text {
@@ -9,8 +10,16 @@
   height: 58px;
   background-color: $color__neutral;
   margin-left: 10px;
-  padding-left: 10px;
+  padding-left: 25px;
   width: 100%;
+
+  &--phone,
+  &--email {
+    margin-left: 0;
+    padding-right: 82px;
+  }
+
+  @include font($font-size__title, $line-height, bold);
 
   &:hover {
     background-color: $color__neutral--hover;
@@ -20,9 +29,42 @@
     background: $color__primary-text;
     border: 4px solid $color__neutral--hover;
   }
+
+  &::placeholder {
+    color: black;
+  }
 }
 
 .input-invalid {
   border: 2px solid $color__error;
   border-radius: 3px;
+}
+
+.input-field__icon {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: $color__neutral--accent;
+}
+
+.input-field__text-wrapper {
+  position: relative;
+}
+
+.icon {
+  &--email {
+    width: 16px;
+    height: 12px;
+  }
+
+  &--phone {
+    width: 18px;
+    height: 18px;
+  }
 }

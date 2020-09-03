@@ -52,7 +52,7 @@
       <h1 class="visually-hidden">Отзывы</h1>
       <div class="context">
         <p class="context__title title">Оставьте свой отзыв</p>
-        <p class="context__description description">
+        <p class="context__description context__description--form description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
@@ -81,9 +81,15 @@
             <div class="review-contacts__wrapper">
               <label class="review-contacts__input review-contacts__input--phone input-field" for="phone"> Контактный телефон*: </label>
               <label class="review-contacts__input review-contacts__input--phone-desktop input-field" for="phone"> Телефон*: </label>
-              <input class="input-field__text" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
+              <div class="input-field__text-wrapper">
+                <input class="input-field__text input-field__text--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
+                <div class="input-field__icon icon"><svg class="icon--phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
+              </div>
               <label class="review-contacts__input review-contacts__input--email input-field" for="email">Электронная почта*:</label>
-              <input class="input-field__text" name="email" id="email" placeholder="Введите e-mail" />
+              <div class="input-field__text-wrapper">
+                <input class="input-field__text input-field__text--email" name="email" id="email" placeholder="Введите e-mail" />
+                <div class="input-field__icon icon"><svg class="icon--email"><use xlink:href="img/sprite.svg#icon-mail"></use></svg></div>
+              </div>
             </div>
           </fieldset>
           <fieldset class="review-section review-impressions">
@@ -107,7 +113,7 @@
             </div>
           </fieldset>
           <fieldset class="review-section review-sightseeing">
-            <legend class="review-section__title">посещенные достопримечательности:</legend>
+            <legend class="review-section__title review-section__title--sightseeing">посещенные достопримечательности:</legend>
             <div class="review-sightseeing__wrapper">
               <label class="review-sightseeing__check check">
                 <input class="check__input" type="checkbox" name="devil_bridge" checked />
