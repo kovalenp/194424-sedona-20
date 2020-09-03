@@ -3,6 +3,7 @@
   margin: 0 auto;
   background-color: $color__primary-text;
   min-width: 320px;
+  position: relative;
 
   @include mobile {
     width: 100%;

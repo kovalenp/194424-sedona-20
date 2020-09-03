@@ -3,6 +3,15 @@ const reviewForm = document.querySelector(".feedback__form");
 const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 
+const popupFail = document.querySelector(".popup__failure");
+const popupSuccess = document.querySelector(".popup__success");
+
+popupFail.classList.add("js-invisible");
+popupSuccess.classList.add("js-invisible");
+
+const closeButton = document.querySelector(".button__close");
+const okButton = document.querySelector(".button__ok");
+
 function validateEmail(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
   return re.test(email);
@@ -32,7 +41,21 @@ reviewForm.addEventListener("submit", function (e) {
   e.preventDefault();
   if (emailInput.classList.contains("input-invalid") || phoneInput.classList.contains("input-invalid")) {
     console.log("Invalid");
+    popupFail.classList.remove("js-invisible");
   } else {
     console.log("All OK");
+    popupSuccess.classList.remove("js-invisible");
   }
+});
+
+okButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  popupFail.classList.add("js-invisible");
+  console.log("OK");
+});
+
+closeButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  popupSuccess.classList.add("js-invisible");
+  console.log("Close");
 });

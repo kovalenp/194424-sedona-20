@@ -18,6 +18,7 @@
 @import "./blocks/page-intro.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/photo.scss";
+@import "./blocks/popup.scss";
 @import "./blocks/reasons.scss";
 @import "./blocks/review.scss";
 @import "./blocks/site-list.scss";
@@ -25,8 +26,12 @@
 @import "./blocks/video.scss";
 
 .js-invisible {
-  @include mobile {
-    display: none;
+  display: none;
+
+  &--mobile {
+    @include mobile {
+      display: none;
+    }
   }
 }
 
