@@ -31,13 +31,12 @@
   }
 
   &::placeholder {
-    color: black;
+    color: $color__menu-text;
   }
 }
 
 .input-invalid {
-  border: 2px solid $color__error;
-  border-radius: 3px;
+  outline: 2px solid $color__error;
 }
 
 .input-field__icon {
