@@ -9,8 +9,8 @@ const popupSuccess = document.querySelector(".popup__success");
 popupFail.classList.add("js-invisible");
 popupSuccess.classList.add("js-invisible");
 
-const closeButton = document.querySelector(".button__close");
-const okButton = document.querySelector(".button__ok");
+const closeButton = document.querySelector(".popup-button__close");
+const okButton = document.querySelector(".popup-button__ok");
 
 function validateEmail(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
@@ -40,10 +40,9 @@ phoneInput.addEventListener("change", () => {
 reviewForm.addEventListener("submit", function (e) {
   e.preventDefault();
   if (emailInput.classList.contains("input-invalid") || phoneInput.classList.contains("input-invalid")) {
-    console.log("Invalid");
     popupFail.classList.remove("js-invisible");
   } else {
-    console.log("All OK");
+    // add sending request to HTML Academy form endpoint
     popupSuccess.classList.remove("js-invisible");
   }
 });
@@ -51,11 +50,9 @@ reviewForm.addEventListener("submit", function (e) {
 okButton.addEventListener("click", (e) => {
   e.preventDefault();
   popupFail.classList.add("js-invisible");
-  console.log("OK");
 });
 
 closeButton.addEventListener("click", (e) => {
   e.preventDefault();
   popupSuccess.classList.add("js-invisible");
-  console.log("Close");
 });

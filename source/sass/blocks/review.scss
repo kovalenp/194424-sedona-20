@@ -110,14 +110,17 @@
   @include desktop {
     display: block;
     padding-top: 23px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-right: 8px;
   }
 }
 
 .review-impressions {
   grid-area: impressions;
-  border-right: 1px solid $color__decoration-line;
+
+  @include tablet {
+    border-right: 1px solid $color__decoration-line;
+  }
 }
 
 .review-impressions__wrapper {
@@ -130,10 +133,10 @@
 
 .review-sightseeing {
   grid-area: sightseeing;
-  border-top: 1px solid $color__decoration-line;
 
   @include tablet {
     margin-bottom: 15px;
+    border-top: 1px solid $color__decoration-line;
   }
 }
 
@@ -268,7 +271,7 @@
 
     @include tablet {
       text-align: center;
-      padding: 0px 61px;
+      padding: 0 61px;
       padding-top: 49px;
       padding-bottom: 50px;
       width: 200px;
@@ -282,7 +285,7 @@
   &--contacts {
     @include tablet {
       text-align: center;
-      padding: 0px 61px;
+      padding: 0 61px;
       padding-top: 32px;
       padding-bottom: 20px;
     }
