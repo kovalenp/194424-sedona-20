@@ -1,5 +1,29 @@
+.review-section {
+  border: none;
+  position: relative;
+
+  @include mobile {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &::before {
+      content: "";
+      border-top: 1px solid $color__neutral--hover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+}
+
 .review-personal-info {
   grid-area: personal-info;
+
+  @include tablet {
+    padding-left: 57px;
+  }
 }
 
 .review-personal-info__wrapper {
@@ -18,12 +42,16 @@
 
 .review-contacts {
   grid-area: contacts;
+
+  @include tablet {
+    border-top: 1px solid $color__decoration-line;
+  }
 }
 
 .review-contacts__wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 28px;
+  padding-bottom: 7px;
 
   @include desktop {
     flex-direction: row;
@@ -41,6 +69,11 @@
   &--email {
     padding-bottom: 12px;
     padding-top: 17px;
+
+    @include tablet {
+      padding-bottom: 11px;
+      padding-top: 29px;
+    }
   }
 }
 
@@ -62,6 +95,7 @@
 
 .review-impressions {
   grid-area: impressions;
+  border-right: 1px solid $color__decoration-line;
 }
 
 .review-impressions__wrapper {
@@ -74,6 +108,8 @@
 
 .review-sightseeing {
   grid-area: sightseeing;
+  border-top: 1px solid $color__decoration-line;
+  margin-bottom: 15px;
 }
 
 .review-sightseeing__wrapper {
@@ -86,6 +122,8 @@
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 50px;
+    padding-top: 7px;
   }
 
   @include desktop {
@@ -98,11 +136,13 @@
   margin-bottom: 12px;
 
   &:last-of-type {
-    margin-bottom: -2px;
+    @include mobile {
+      margin-bottom: -2px;
+    }
   }
 
   @include tablet {
-    width: 50%;
+    width: 36%;
   }
 
   @include desktop {
@@ -112,6 +152,10 @@
 
 .review__text {
   grid-area: text;
+
+  @include tablet {
+    border-top: 1px solid $color__decoration-line;
+  }
 }
 
 .review__button {
@@ -123,6 +167,11 @@
   margin-bottom: 41px;
 
   @include font($font-size__title--large, $line-height, bold);
+
+  @include tablet {
+    width: 322px;
+    margin-bottom: 61px;
+  }
 }
 
 .review__footnote {
@@ -130,6 +179,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-bottom: 7px;
+
+  @include font($font-size__description, $line-height, normal);
 
   @include mobile {
     display: none;
@@ -159,26 +211,6 @@
   }
 }
 
-.review-section {
-  border: none;
-  position: relative;
-
-  @include mobile {
-    width: 320px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-    &::before {
-      content: "";
-      border-top: 1px solid $color__neutral--hover;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-    }
-  }
-}
-
 .review-section__title {
   padding: 22px 0;
   text-align: center;
@@ -186,9 +218,41 @@
 
   @include font($font-size__title, $line-height, bold);
 
+  @include tablet {
+    @include font($font-size__title--large, $line-height, bold);
+    padding-top: 50px;
+    padding-bottom: 56px;
+    text-align: start;
+  }
+
   &--sightseeing {
     padding-top: 16px;
     padding-bottom: 27px;
+
+    @include tablet {
+      text-align: center;
+      padding: 0px 61px;
+      padding-top: 49px;
+      padding-bottom: 50px;
+      width: 200px;
+    }
+  }
+
+  &--contacts {
+    @include tablet {
+      text-align: center;
+      padding: 0px 61px;
+      padding-top: 32px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &--text {
+    @include tablet {
+      text-align: center;
+      padding: 0 77px;
+      padding-top: 3px;
+    }
   }
 }
 
@@ -204,6 +268,12 @@
   padding-left: 20px;
 
   @include font($font-size__title, $line-height, bold);
+
+  @include tablet {
+    padding-top: 17px;
+    margin-top: 56px;
+    margin-bottom: 7px;
+  }
 
   &:hover {
     background-color: $color__neutral--hover;

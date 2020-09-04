@@ -7,6 +7,11 @@
 
   @include font($font-size__title, $line-height, bold);
 
+  @include tablet {
+    padding-bottom: 53px;
+    padding-left: 75px;
+  }
+
   &:hover .check__icon {
     background-color: $color__neutral--hover;
     border: 5px solid $color__neutral--hover;
@@ -40,6 +45,11 @@
   background: $color__neutral;
   border: 5px solid $color__neutral;
   margin-left: -74px;
+
+  @include tablet {
+    box-sizing: content-box;
+    margin-left: -76px;
+  }
 
   &--radio {
     border-radius: 50%;

@@ -51,7 +51,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Отзывы</h1>
       <div class="context">
-        <p class="context__title title">Оставьте свой отзыв</p>
+        <p class="context__title context__title--form">Оставьте свой отзыв</p>
         <p class="context__description context__description--form description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
@@ -59,7 +59,7 @@
       <section class="feedback">
         <h2 class="visually-hidden">Оставьте свой отзыв</h2>
         <form class="feedback__form review" autocomplete="off">
-          <fieldset class="review-personal-info review-section">
+          <fieldset class="review-section review-personal-info">
             <legend class="review-section__title">Представьтесь:</legend>
             <div class="review-personal-info__wrapper">
               <label class="review-personal-info__input input-field">
@@ -77,7 +77,7 @@
             </div>
           </fieldset>
           <fieldset class="review-contacts review-section">
-            <legend class="review-section__title">Контактная информация:</legend>
+            <legend class="review-section__title review-section__title--contacts">Контактная информация:</legend>
             <div class="review-contacts__wrapper">
               <label class="review-contacts__input review-contacts__input--phone input-field" for="phone"> Контактный телефон*: </label>
               <label class="review-contacts__input review-contacts__input--phone-desktop input-field" for="phone"> Телефон*: </label>
@@ -150,7 +150,7 @@
             </div>
           </fieldset>
           <fieldset class="review__text review-section">
-            <legend class="review-section__title">Опишите свои эмоции:</legend>
+            <legend class="review-section__title review-section__title--text">Опишите свои эмоции:</legend>
             <label for="review-text" class="review-section__label visually-hidden"> Поле для текста отзыва </label>
             <textarea class="review-section__textarea" id="review-text" name="review-text" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
