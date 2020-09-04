@@ -21,6 +21,7 @@
   @include tablet {
     padding: 0;
     margin-top: 20px;
+
     @include font($font-size__title--xlarge, $line-height, bold);
   }
 
