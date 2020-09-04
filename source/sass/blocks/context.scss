@@ -66,7 +66,10 @@
   }
 
   &--form {
+    @include font($font-size__title, $line-height, bold);
+
     @include tablet {
+      @include font($font-size__title--xlarge, $line-height, bold);
       margin-top: 29px;
     }
 

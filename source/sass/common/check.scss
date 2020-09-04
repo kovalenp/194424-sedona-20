@@ -12,6 +12,10 @@
     padding-left: 75px;
   }
 
+  @include desktop {
+    padding-left: 80px;
+  }
+
   &:hover .check__icon {
     background-color: $color__neutral--hover;
     border: 5px solid $color__neutral--hover;

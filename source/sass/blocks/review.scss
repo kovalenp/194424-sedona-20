@@ -24,11 +24,19 @@
   @include tablet {
     padding-left: 57px;
   }
+
+  @include desktop {
+    padding-left: 0;
+  }
 }
 
 .review-personal-info__wrapper {
   display: flex;
   flex-direction: column;
+
+  @include desktop {
+    padding-left: 20px;
+  }
 }
 
 .review-personal-info__input {
@@ -43,6 +51,10 @@
 .review-contacts {
   grid-area: contacts;
 
+  @include mobile {
+    margin-bottom: 20px;
+  }
+
   @include tablet {
     border-top: 1px solid $color__decoration-line;
   }
@@ -56,7 +68,7 @@
   @include desktop {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 47px;
   }
 }
 
@@ -74,14 +86,21 @@
       padding-bottom: 11px;
       padding-top: 29px;
     }
+
+    @include desktop {
+      padding-bottom: 12px;
+      padding-top: 15px;
+      padding-left: 79px;
+      padding-right: 7px;
+    }
   }
-}
 
-.review-contacts__input--phone {
-  padding-bottom: 15px;
+  &--phone {
+    padding-bottom: 15px;
 
-  @include desktop {
-    display: none;
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -90,6 +109,9 @@
 
   @include desktop {
     display: block;
+    padding-top: 23px;
+    padding-left: 0px;
+    padding-right: 8px;
   }
 }
 
@@ -109,7 +131,10 @@
 .review-sightseeing {
   grid-area: sightseeing;
   border-top: 1px solid $color__decoration-line;
-  margin-bottom: 15px;
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
 }
 
 .review-sightseeing__wrapper {
@@ -129,6 +154,9 @@
   @include desktop {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 4px;
   }
 }
 
@@ -146,7 +174,7 @@
   }
 
   @include desktop {
-    width: 25%;
+    width: 205px;
   }
 }
 
@@ -171,6 +199,11 @@
   @include tablet {
     width: 322px;
     margin-bottom: 61px;
+  }
+
+  @include desktop {
+    width: 480px;
+    margin-bottom: 70px;
   }
 }
 
@@ -225,6 +258,10 @@
     text-align: start;
   }
 
+  @include desktop {
+    padding-left: 81px;
+  }
+
   &--sightseeing {
     padding-top: 16px;
     padding-bottom: 27px;
@@ -236,6 +273,10 @@
       padding-bottom: 50px;
       width: 200px;
     }
+
+    @include desktop {
+      padding-top: 46px;
+    }
   }
 
   &--contacts {
@@ -245,9 +286,19 @@
       padding-top: 32px;
       padding-bottom: 20px;
     }
+
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 24px;
+    }
   }
 
   &--text {
+    @include mobile {
+      padding-top: 21px;
+      padding-bottom: 18px;
+    }
+
     @include tablet {
       text-align: center;
       padding: 0 77px;

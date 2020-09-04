@@ -17,9 +17,19 @@
   &--email {
     margin-left: 0;
     padding-right: 82px;
+
+    @include desktop {
+      width: 315px;
+      padding-left: 23px;
+      padding-right: 75px;
+    }
   }
 
   @include font($font-size__title, $line-height, bold);
+
+  @include desktop {
+    margin-left: 12px;
+  }
 
   &:hover {
     background-color: $color__neutral--hover;
