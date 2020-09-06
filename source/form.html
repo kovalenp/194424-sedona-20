@@ -62,36 +62,36 @@
           <fieldset class="review-section review-personal-info">
             <legend class="review-section__title">Представьтесь:</legend>
             <div class="review-personal-info__wrapper">
-              <label class="review-personal-info__input input-field">
+              <label class="review-personal-info__input input-field-label">
                 Имя*:
-                <input class="input-field__text" type="text" id="name" name="personal-info" placeholder="Петр" />
+                <input class="input-field-text" type="text" id="name" name="personal-info" placeholder="Петр" />
               </label>
-              <label class="review-personal-info__input input-field">
+              <label class="review-personal-info__input input-field-label">
                 Фамилия*:
-                <input class="input-field__text" type="text" id="surname" name="personal-info" placeholder="Иванов" />
+                <input class="input-field-text" type="text" id="surname" name="personal-info" placeholder="Иванов" />
               </label>
-              <label class="review-personal-info__input input-field">
+              <label class="review-personal-info__input input-field-label">
                 Отчество:
-                <input class="input-field__text" type="text" id="middle_name" name="personal-info" placeholder="Александрович" />
+                <input class="input-field-text" type="text" id="middle_name" name="personal-info" placeholder="Александрович" />
               </label>
             </div>
           </fieldset>
           <fieldset class="review-contacts review-section">
             <legend class="review-section__title review-section__title--contacts">Контактная информация:</legend>
             <div class="review-contacts__wrapper">
-              <label class="review-contacts__input review-contacts__input--phone input-field" for="phone"> Контактный телефон*: </label>
-              <label class="review-contacts__input review-contacts__input--phone-desktop input-field" for="phone"> Телефон*: </label>
-              <div class="input-field__text-wrapper">
-                <input class="input-field__text input-field__text--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
-                <div class="input-field__icon icon">
-                  <svg class="icon--phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+              <label class="review-contacts__input review-contacts__input--phone input-field-label" for="phone"> Контактный телефон*: </label>
+              <label class="review-contacts__input review-contacts__input--phone-desktop input-field-label" for="phone"> Телефон*: </label>
+              <div class="input-field">
+                <input class="input-field-text input-field-text--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
+                <div class="input-field__icon">
+                  <svg class="icon icon--phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
                 </div>
               </div>
-              <label class="review-contacts__input review-contacts__input--email input-field" for="email">Электронная почта*:</label>
-              <div class="input-field__text-wrapper">
-                <input class="input-field__text input-field__text--email" name="email" id="email" placeholder="Введите e-mail" />
-                <div class="input-field__icon icon">
-                  <svg class="icon--email"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+              <label class="review-contacts__input review-contacts__input--email input-field-label" for="email">Электронная почта*:</label>
+              <div class="input-field">
+                <input class="input-field-text input-field-text--email" name="email" id="email" placeholder="Введите e-mail" />
+                <div class="input-field__icon">
+                  <svg class="icon icon--email"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
                 </div>
               </div>
             </div>
@@ -209,13 +209,13 @@
     <div class="popup popup__failure">
       <h3 class="popup__title popup-wrapper">Что-то пошло не так!</h3>
       <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button popup-button__ok" type="button">ОК</button>
+      <button class="button button--ok" type="button">ОК</button>
     </div>
     <div class="popup popup__success">
       <h3 class="popup__title popup-wrapper">Ваш отзыв отправлен!</h3>
       <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="popup__button popup-button">
-        <button class="button popup-button__close" type="button">Закрыть окно</button>
+        <button class="button button--close" type="button">Закрыть окно</button>
       </div>
     </div>
     <script src="js/script.js"></script>

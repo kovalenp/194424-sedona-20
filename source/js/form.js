@@ -9,8 +9,8 @@ const popupSuccess = document.querySelector(".popup__success");
 popupFail.classList.add("js-invisible");
 popupSuccess.classList.add("js-invisible");
 
-const closeButton = document.querySelector(".popup-button__close");
-const okButton = document.querySelector(".popup-button__ok");
+const closeButton = document.querySelector(".button--close");
+const okButton = document.querySelector(".button--ok");
 
 function validateEmail(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;

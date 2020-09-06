@@ -48,23 +48,3 @@
     background-color: $color__neutral;
   }
 }
-
-.popup-button__close {
-  width: 180px;
-  height: 58px;
-
-  @include tablet {
-    margin-top: 28px;
-    width: 458px;
-  }
-}
-
-.popup-button__ok {
-  width: 180px;
-  height: 58px;
-
-  @include tablet {
-    margin-bottom: 28px;
-    width: 458px;
-  }
-}

@@ -1,9 +1,9 @@
-.input-field {
+.input-field-label {
   padding-bottom: 20px;
   font-size: 14px;
 }
 
-.input-field__text {
+.input-field-text {
   border: none;
   background-image: none;
   box-shadow: none;
@@ -62,7 +62,7 @@
   background-color: $color__neutral--accent;
 }
 
-.input-field__text-wrapper {
+.input-field {
   position: relative;
 }
 
