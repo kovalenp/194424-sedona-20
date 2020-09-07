@@ -115,6 +115,18 @@
   @include desktop {
     width: 800px;
   }
+
+  &--city {
+    @include desktop {
+      margin-top: -69px;
+    }
+  }
+
+  &--bridge {
+    @include desktop {
+      margin-top: -14px;
+    }
+  }
 }
 
 .reason__title {
