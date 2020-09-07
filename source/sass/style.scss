@@ -3,9 +3,13 @@
 @import "./common/colors";
 @import "./common/fonts";
 @import "./common/screens";
+@import "./common/input-field";
 @import "./common/button.scss";
+@import "./common/check";
+@import "./blocks/control.scss";
 @import "./blocks/context.scss";
 @import "./blocks/copyright.scss";
+@import "./blocks/feedback.scss";
 @import "./blocks/features.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/page.scss";
@@ -13,15 +17,21 @@
 @import "./blocks/page-header.scss";
 @import "./blocks/page-intro.scss";
 @import "./blocks/page-footer.scss";
-@import "./blocks/photo-gallery.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/popup.scss";
 @import "./blocks/reasons.scss";
 @import "./blocks/review.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/social.scss";
+@import "./blocks/video.scss";
 
 .js-invisible {
-  @include mobile {
-    display: none;
+  display: none;
+
+  &--mobile {
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -49,6 +59,10 @@ img {
   height: auto;
 }
 
+fieldset {
+  padding: 0;
+}
+
 .title {
   @include mobile {
     @include font($font-size__title, $line-height, bold);
@@ -64,5 +78,9 @@ img {
 }
 
 .description {
-  @include font($font-size__description, $line-height);
+  @include font($font-size__description, $line-height--medium);
+
+  &--main {
+    @include font($font-size__description, $line-height);
+  }
 }

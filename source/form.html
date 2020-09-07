@@ -17,8 +17,8 @@
             <li class="site-list__item">
               <a class="site-list__item-menu" href="./photo.html">Фото и Видео</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-menu" href="#">Форма отзыва</a>
+            <li class="site-list__item">
+              <a class="site-list__item-menu site-list__item-menu--active" href="./form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__item-menu" href="https://up.htmlacademy.ru/adaptive/19">HTML Academy</a>
@@ -27,14 +27,15 @@
           <div class="page-header__logo">
             <a class="page-header__logo-icon" href="./index.html">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
-                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
-                <img src="img/logo-sedona-mobile.svg" alt="Logo" />
+                <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg" />
+                <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg" />
+                <img src="./img/logo-sedona-mobile.svg" alt="Логотип" />
               </picture>
             </a>
           </div>
-          <button class="main-nav__toggle" type="button">
-            <img src="./img/icon-menu.svg" width="23" height="22" alt="Открыть меню" />
+          <button class="main-nav__toggle toggle" type="button">
+            <svg class="toggle__icon toggle__icon--open"><use xlink:href="img/sprite.svg#icon-menu"></use></svg>
+            <svg class="toggle__icon toggle__icon--close"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
           </button>
         </div>
       </nav>
@@ -50,87 +51,108 @@
     <main class="page-main">
       <h1 class="visually-hidden">Отзывы</h1>
       <div class="context">
-        <p class="context__title title">
-          Оставьте свой отзыв
-        </p>
-        <p class="context__description description">
+        <p class="context__title context__title--form">Оставьте свой отзыв</p>
+        <p class="context__description context__description--form description">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
       <section class="feedback">
         <h2 class="visually-hidden">Оставьте свой отзыв</h2>
-        <form action="https://echo.htmlacademy.ru" class="feedback__form review" method="GET" autocomplete="off">
-          <fieldset class="review__personal-info review-section">
+        <form class="feedback__form review" autocomplete="off">
+          <fieldset class="review-section review-personal-info">
             <legend class="review-section__title">Представьтесь:</legend>
-            <label class="review-section__label" for="input_name">
-              Имя*:
-              <input class="review-section__input" id="input_name" type="text" name="name" placeholder="Петр" />
-            </label>
-            <label class="review-section__label">
-              Фамилия*:
-              <input class="review-section__input" type="text" name="surname" placeholder="Иванов" />
-            </label>
-            <label class="review-section__label">
-              Отчество:
-              <input class="review-section__input" type="text" name="middle_name" placeholder="Александрович" />
-            </label>
+            <div class="review-personal-info__wrapper">
+              <label class="review-personal-info__input input-field-label">
+                Имя*:
+                <input class="input-field-text" type="text" id="name" name="personal-info" placeholder="Петр" />
+              </label>
+              <label class="review-personal-info__input input-field-label">
+                Фамилия*:
+                <input class="input-field-text" type="text" id="surname" name="personal-info" placeholder="Иванов" />
+              </label>
+              <label class="review-personal-info__input input-field-label">
+                Отчество:
+                <input class="input-field-text" type="text" id="middle_name" name="personal-info" placeholder="Александрович" />
+              </label>
+            </div>
           </fieldset>
-          <fieldset class="review__contacts review-section">
-            <legend class="review-section__title">Контактная информация:</legend>
-            <label class="review-section__label">
-              Контактный телефон*:
-              <input class="review-section__input" type="tel" name="phone" placeholder="Введите телефон" />
-            </label>
-            <label class="review-section__label">
-              Электронная почта*:
-              <input class="review-section__input" type="email" name="email" placeholder="Введите e-mail" />
-            </label>
+          <fieldset class="review-contacts review-section">
+            <legend class="review-section__title review-section__title--contacts">Контактная информация:</legend>
+            <div class="review-contacts__wrapper">
+              <label class="review-contacts__input review-contacts__input--phone input-field-label" for="phone"> Контактный телефон*: </label>
+              <label class="review-contacts__input review-contacts__input--phone-desktop input-field-label" for="phone"> Телефон*: </label>
+              <div class="input-field">
+                <input class="input-field-text input-field-text--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" />
+                <div class="input-field__icon">
+                  <svg class="icon icon--phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+                </div>
+              </div>
+              <label class="review-contacts__input review-contacts__input--email input-field-label" for="email">Электронная почта*:</label>
+              <div class="input-field">
+                <input class="input-field-text input-field-text--email" name="email" id="email" placeholder="Введите e-mail" />
+                <div class="input-field__icon">
+                  <svg class="icon icon--email"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+                </div>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="review__impressions review-section">
+          <fieldset class="review-section review-impressions">
             <legend class="review-section__title">Ваше Общее впечатление:</legend>
-            <label class="review-section__label">
-              Скорее положительное
-              <input class="review-section__radio" type="radio" name="positive" value="positive" checked />
-            </label>
-            <label class="review-section__label">
-              Скорее отрицательное
-              <input class="review-section__radio" type="radio" name="negative" value="negative" />
-            </label>
-            <label class="review-section__label">
-              Затрудняюсь ответить
-              <input class="review-section__radio" type="radio" name="neutral" value="neutral" />
-            </label>
+            <div class="review-impressions__wrapper">
+              <label class="review-impressions__check check">
+                <input class="check__input" type="radio" id="positive" value="positive" name="impressions" checked />
+                <span class="check__icon check__icon--radio"></span>
+                Скорее положительное
+              </label>
+              <label class="review-impressions__check check">
+                <input class="check__input" type="radio" id="negative" value="negative" name="impressions" />
+                <span class="check__icon check__icon--radio"></span>
+                Скорее отрицательное
+              </label>
+              <label class="review-impressions__check check">
+                <input class="check__input" type="radio" id="neutral" value="neutral" name="impressions" />
+                <span class="check__icon check__icon--radio"></span>
+                Затрудняюсь ответить
+              </label>
+            </div>
           </fieldset>
-          <fieldset class="review__sightseeing review-section">
-            <legend class="review-section__title">посещенные достопримечательности:</legend>
-            <label class="review-section__label">
-              Мост Дьявола
-              <input class="review-section__checkbox" type="checkbox" name="devil_bridge" checked />
-            </label>
-            <label class="review__box-label">
-              Гора-Колокол
-              <input class="review-section__checkbox" type="checkbox" name="bell_mountain" checked />
-            </label>
-            <label class="review__box-label">
-              Слайд-парк
-              <input class="review-section__checkbox" type="checkbox" name="side_park" checked />
-            </label>
-            <label class="review__box-label">
-              Красные скалы
-              <input class="review-section__checkbox" type="checkbox" name="red_rocks" />
-            </label>
+          <fieldset class="review-section review-sightseeing">
+            <legend class="review-section__title review-section__title--sightseeing">посещенные достопримечательности:</legend>
+            <div class="review-sightseeing__wrapper">
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="devil_bridge" checked />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Мост Дьявола
+              </label>
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="bell_mountain" checked />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Гора-Колокол
+              </label>
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="side_park" checked />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Слайд-парк
+              </label>
+              <label class="review-sightseeing__check check">
+                <input class="check__input" type="checkbox" name="red_rocks" />
+                <span class="check__icon check__icon--checkbox">
+                  <svg class="check__tick"><use xlink:href="img/sprite.svg#icon-tick"></use></svg>
+                </span>
+                Красные скалы
+              </label>
+            </div>
           </fieldset>
           <fieldset class="review__text review-section">
-            <legend class="review-section__title">Опишите свои эмоции:</legend>
-            <label for="review-text" class="review-section__label visually-hidden">
-              Поле для текста отзыва
-            </label>
-            <textarea
-              class="review-section__textarea"
-              id="review-text"
-              name="review-text"
-              placeholder="Опишите подробно все свои восторги "
-            ></textarea>
+            <legend class="review-section__title review-section__title--text">Опишите свои эмоции:</legend>
+            <label for="review-text" class="review-section__label visually-hidden"> Поле для текста отзыва </label>
+            <textarea class="review-section__textarea" id="review-text" name="review-text" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
           <button class="review__button button" type="submit">Отправить отзыв</button>
           <p class="review__footnote">* — обязательные поля</p>
@@ -184,6 +206,19 @@
         </a>
       </div>
     </footer>
+    <div class="popup popup__failure">
+      <h3 class="popup__title popup-wrapper">Что-то пошло не так!</h3>
+      <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button button--ok" type="button">ОК</button>
+    </div>
+    <div class="popup popup__success">
+      <h3 class="popup__title popup-wrapper">Ваш отзыв отправлен!</h3>
+      <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup__button popup-button">
+        <button class="button button--close" type="button">Закрыть окно</button>
+      </div>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

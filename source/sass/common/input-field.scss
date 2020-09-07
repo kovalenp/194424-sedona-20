@@ -1,0 +1,79 @@
+.input-field-label {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.input-field-text {
+  border: none;
+  background-image: none;
+  box-shadow: none;
+  height: 58px;
+  background-color: $color__neutral;
+  margin-left: 10px;
+  padding-left: 25px;
+  width: 100%;
+
+  &--phone,
+  &--email {
+    margin-left: 0;
+    padding-right: 82px;
+
+    @include desktop {
+      width: 315px;
+      padding-left: 23px;
+      padding-right: 75px;
+    }
+  }
+
+  @include font($font-size__title, $line-height, bold);
+
+  @include desktop {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    background-color: $color__neutral--hover;
+  }
+
+  &:focus {
+    background: $color__primary-text;
+    border: 4px solid $color__neutral--hover;
+  }
+
+  &::placeholder {
+    color: $color__menu-text;
+  }
+}
+
+.input-invalid {
+  outline: 2px solid $color__error;
+}
+
+.input-field__icon {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: $color__neutral--accent;
+}
+
+.input-field {
+  position: relative;
+}
+
+.icon {
+  &--email {
+    width: 16px;
+    height: 12px;
+  }
+
+  &--phone {
+    width: 18px;
+    height: 18px;
+  }
+}

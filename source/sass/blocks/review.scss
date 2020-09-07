@@ -1,29 +1,223 @@
-.review__personal-info {
+.review-section {
+  border: none;
+  position: relative;
+
+  @include mobile {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &::before {
+      content: "";
+      border-top: 1px solid $color__neutral--hover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+}
+
+.review-personal-info {
   grid-area: personal-info;
+
+  @include tablet {
+    padding-left: 57px;
+  }
+
+  @include desktop {
+    padding-left: 0;
+  }
 }
 
-.review__contacts {
+.review-personal-info__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    padding-left: 20px;
+  }
+}
+
+.review-personal-info__input {
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    padding-left: 60px;
+  }
+}
+
+.review-contacts {
   grid-area: contacts;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    border-top: 1px solid $color__decoration-line;
+  }
 }
 
-.review__impressions {
+.review-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7px;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 47px;
+  }
+}
+
+.review-contacts__input {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 20px;
+
+  &--email {
+    padding-bottom: 12px;
+    padding-top: 17px;
+
+    @include tablet {
+      padding-bottom: 11px;
+      padding-top: 29px;
+    }
+
+    @include desktop {
+      padding-bottom: 12px;
+      padding-top: 15px;
+      padding-left: 79px;
+      padding-right: 7px;
+    }
+  }
+
+  &--phone {
+    padding-bottom: 15px;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.review-contacts__input--phone-desktop {
+  display: none;
+
+  @include desktop {
+    display: block;
+    padding-top: 23px;
+    padding-left: 0;
+    padding-right: 8px;
+  }
+}
+
+.review-impressions {
   grid-area: impressions;
+
+  @include tablet {
+    border-right: 1px solid $color__decoration-line;
+  }
 }
 
-.review__sightseeing {
+.review-impressions__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 200px;
+  padding-top: 15px;
+}
+
+.review-sightseeing {
   grid-area: sightseeing;
+
+  @include tablet {
+    margin-bottom: 15px;
+    border-top: 1px solid $color__decoration-line;
+  }
+}
+
+.review-sightseeing__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 80px;
+  padding-top: 8px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    padding-top: 7px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 4px;
+  }
+}
+
+.review-sightseeing__check {
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    @include mobile {
+      margin-bottom: -2px;
+    }
+  }
+
+  @include tablet {
+    width: 36%;
+  }
+
+  @include desktop {
+    width: 205px;
+  }
 }
 
 .review__text {
   grid-area: text;
+
+  @include tablet {
+    border-top: 1px solid $color__decoration-line;
+  }
 }
 
 .review__button {
   grid-area: button;
+  min-height: 58px;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 41px;
+
+  @include font($font-size__title--large, $line-height, bold);
+
+  @include tablet {
+    width: 322px;
+    margin-bottom: 61px;
+  }
+
+  @include desktop {
+    width: 480px;
+    margin-bottom: 70px;
+  }
 }
 
 .review__footnote {
   grid-area: footnote;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 7px;
+
+  @include font($font-size__description, $line-height, normal);
 
   @include mobile {
     display: none;
@@ -33,10 +227,14 @@
 .review {
   display: grid;
   grid-template-rows: auto;
-
-  @include mobile {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "personal-info"
+    "contacts"
+    "impressions"
+    "sightseeing"
+    "text"
+    "button";
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -49,6 +247,98 @@
   }
 }
 
-.review-section {
+.review-section__title {
+  padding: 22px 0;
+  text-align: center;
+  position: relative;
+
+  @include font($font-size__title, $line-height, bold);
+
+  @include tablet {
+    @include font($font-size__title--large, $line-height, bold);
+    padding-top: 50px;
+    padding-bottom: 56px;
+    text-align: start;
+  }
+
+  @include desktop {
+    padding-left: 81px;
+  }
+
+  &--sightseeing {
+    padding-top: 16px;
+    padding-bottom: 27px;
+
+    @include tablet {
+      text-align: center;
+      padding: 0 61px;
+      padding-top: 49px;
+      padding-bottom: 50px;
+      width: 200px;
+    }
+
+    @include desktop {
+      padding-top: 46px;
+    }
+  }
+
+  &--contacts {
+    @include tablet {
+      text-align: center;
+      padding: 0 61px;
+      padding-top: 32px;
+      padding-bottom: 20px;
+    }
+
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &--text {
+    @include mobile {
+      padding-top: 21px;
+      padding-bottom: 18px;
+    }
+
+    @include tablet {
+      text-align: center;
+      padding: 0 77px;
+      padding-top: 3px;
+    }
+  }
+}
+
+.review-section__textarea {
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  min-height: 160px;
   border: none;
+  background-color: $color__neutral;
+  color: $color__menu-text;
+  padding-top: 11px;
+  padding-left: 20px;
+
+  @include font($font-size__title, $line-height, bold);
+
+  @include tablet {
+    padding-top: 17px;
+    margin-top: 56px;
+    margin-bottom: 7px;
+  }
+
+  &:hover {
+    background-color: $color__neutral--hover;
+  }
+
+  &:focus {
+    background: $color__primary-text;
+    border: 4px solid $color__neutral--hover;
+  }
+
+  &::placeholder {
+    color: $color__menu-text;
+  }
 }

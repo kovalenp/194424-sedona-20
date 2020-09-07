@@ -1,0 +1,112 @@
+.control {
+  z-index: 3;
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 66px;
+  background-color: $color__neutral;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    height: 93px;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgba($color: $color__menu-text, $alpha: 0.6);
+  }
+}
+
+.control__icon {
+  fill: $color__control__element;
+
+  @include tablet {
+    fill: $color__primary-text;
+  }
+
+  &--replay {
+    width: 16px;
+    height: 20px;
+
+    @include mobile {
+      margin-left: 24px;
+    }
+  }
+
+  &--video-subtitles {
+    width: 32px;
+    height: 20px;
+
+    @include mobile {
+      margin-left: 133px;
+    }
+
+    @include tablet {
+      margin-left: 20px;
+    }
+  }
+
+  &--video-fullscreen {
+    width: 20px;
+    height: 20px;
+
+    @include mobile {
+      margin-left: 31px;
+    }
+
+    @include tablet {
+      margin-right: 8px;
+    }
+  }
+}
+
+.control__progress-bar {
+  @include mobile {
+    z-index: 3;
+    position: absolute;
+    top: -45px;
+    min-height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: $color__menu-text, $alpha: 0.6);
+  }
+}
+
+.progress-bar__line {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba($color: $color__primary-text, $alpha: 0.2);
+
+  @include tablet {
+    width: 389px;
+  }
+
+  @include desktop {
+    width: 540px;
+  }
+}
+
+.progress-bar__dot {
+  z-index: 5;
+  position: absolute;
+  left: 15%;
+  bottom: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: $color__primary-text;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include tablet {
+    left: 32%;
+  }
+
+  @include desktop {
+    left: 23%;
+  }
+}

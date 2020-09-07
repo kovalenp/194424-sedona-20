@@ -15,14 +15,121 @@
 }
 
 .context__title {
-  padding: 0 15px;
-  padding-top: 45px;
+  padding: 32px 15px;
   width: 90%;
+
+  @include tablet {
+    padding: 0;
+    margin-top: 20px;
+
+    @include font($font-size__title--xlarge, $line-height, bold);
+  }
+
+  @include desktop {
+    margin-top: 30px;
+    width: 70%;
+  }
+
+  &--photo {
+    padding: 0;
+    padding-top: 23px;
+
+    @include tablet {
+      padding: 0;
+      margin-top: 64px;
+    }
+
+    @include desktop {
+      margin-top: 104px;
+    }
+  }
+
+  &--video {
+    padding: 0;
+    padding-top: 33px;
+
+    @include tablet {
+      padding: 0;
+      margin-top: 56px;
+    }
+  }
+
+  &--booking {
+    @include font($font-size__title--large, $line-height, bold);
+    padding-bottom: 22px;
+    padding-top: 35px;
+
+    @include tablet {
+      @include font($font-size__title--xlarge, $line-height, bold);
+      padding: 0;
+      margin-top: 15px;
+    }
+  }
+
+  &--form {
+    @include font($font-size__title, $line-height, bold);
+
+    @include tablet {
+      @include font($font-size__title--xlarge, $line-height, bold);
+      margin-top: 29px;
+    }
+
+    @include desktop {
+      margin-top: 112px;
+      margin-bottom: 34px;
+    }
+  }
 }
 
 .context__description {
   width: 90%;
-  padding: 30px 0;
+  padding-bottom: 10px;
+
+  @include tablet {
+    width: 100%;
+    padding: 0;
+  }
+
+  &--photo {
+    padding: 0;
+    padding-top: 38px;
+    padding-bottom: 45px;
+    width: 86%;
+  }
+
+  &--video {
+    padding: 0;
+    padding-top: 41px;
+    padding-bottom: 39px;
+    width: 86%;
+  }
+
+  &--form {
+    padding-bottom: 14px;
+
+    @include tablet {
+      padding-bottom: 4px;
+      width: 82%;
+    }
+
+    @include desktop {
+      width: 438px;
+      margin-bottom: 7px;
+      padding: 0;
+    }
+  }
+
+  &--booking {
+    @include font($font-size__description, $line-height--medium, normal);
+
+    @include tablet {
+      width: 76%;
+    }
+
+    @include desktop {
+      width: 50%;
+    }
+  }
 }
 
 .context__mask {

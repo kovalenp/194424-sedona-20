@@ -6,6 +6,7 @@
   @include mobile {
     flex-direction: column;
     min-height: 233px;
+    margin-top: 10px;
   }
 
   @include tablet {
@@ -17,4 +18,12 @@
     flex-direction: row;
     min-height: 120px;
   }
+}
+
+.page-footer__contacts {
+  font-size: $font-size__title--large;
+}
+
+.page-footer__copyright {
+  font-size: $font-size__description;
 }

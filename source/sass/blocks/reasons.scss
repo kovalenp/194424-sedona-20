@@ -6,13 +6,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   max-height: 256px;
 
   @include mobile {
     min-width: 320px;
     min-height: 191px;
+  }
+
+  &--decorated {
+    @include mobile {
+      min-height: 227px;
+    }
+  }
+
+  @include tablet {
+    justify-content: flex-start;
   }
 }
 
@@ -31,13 +41,17 @@
   background-color: $color__secondary;
 
   @include mobile {
+    position: relative;
+
     &:not(:last-child)::after {
+      position: absolute;
+      bottom: 0;
       content: "";
-      width: 90%;
       border-bottom: 1px solid $color__border;
+      width: 90%;
     }
 
-    min-height: 168px;
+    min-height: 167px;
   }
 
   @include tablet {
@@ -72,28 +86,75 @@
 
   @include tablet {
     grid-template-columns: 1fr 2fr;
+    min-height: 256px;
+    min-width: 768px;
+  }
+
+  @include desktop {
     max-height: 256px;
   }
 
   &--reverted {
     @include tablet {
       grid-template-columns: 2fr 1fr;
-      max-height: 256px;
+      min-height: 256px;
     }
   }
 }
 
-.reason__title {
-  // TODO: this is wrong, fix with pixel perfect for the second element
-  padding-top: 35px;
-}
-
 .reasons__image {
+  line-height: 0;
+  background-color: $color__neutral--darker;
+
   @include mobile {
     margin: 0 auto;
+    min-height: 260px;
+    min-width: 320px;
   }
 
   @include desktop {
     width: 800px;
+  }
+}
+
+.reason__title {
+  @include tablet {
+    margin-top: 40px;
+    width: 60%;
+  }
+
+  @include desktop {
+    width: 38%;
+  }
+
+  &--decorated {
+    margin-top: 33px;
+
+    @include desktop {
+      margin-top: 47px;
+    }
+  }
+}
+
+.reason__count {
+  margin-top: 13px;
+}
+
+.reason__description {
+  margin-top: 17px;
+
+  &--accent {
+    width: 80%;
+  }
+
+  &--decorated {
+    @include tablet {
+      width: 90%;
+    }
+  }
+
+  @include tablet {
+    margin-top: 26px;
+    width: 75%;
   }
 }

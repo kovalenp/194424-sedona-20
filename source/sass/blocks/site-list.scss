@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55px;
-  padding: 10px;
-  border-top: 1px solid $color-menu-border;
+  height: 56px;
+  padding-top: 5px;
   border-bottom: 1px solid $color-menu-shadow;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   background-color: $color__primary;
   box-sizing: border-box;
 
@@ -39,6 +39,24 @@
       margin-right: 0;
     }
   }
+
+  &:hover {
+    @include mobile {
+      background-color: $color__primary--hover;
+    }
+  }
+
+  &:active {
+    @include mobile {
+      background-color: $color__primary--darker;
+    }
+  }
+
+  &:active .site-list__item-menu {
+    @include mobile {
+      color: $color__menu-text--light;
+    }
+  }
 }
 
 .site-list__item-menu {
@@ -68,5 +86,41 @@
     @include font($font-size__description, $line-height, bold);
     text-align: center;
     color: $color__menu-text;
+  }
+
+  &--main {
+    @include mobile {
+      position: relative;
+    }
+  }
+
+  &:hover {
+    @include tablet {
+      color: $color__menu-text--hover;
+    }
+  }
+
+  &:active {
+    @include tablet {
+      color: $color__menu-text--light;
+    }
+  }
+
+  &--active {
+    @include tablet {
+      color: $color__accent-text;
+    }
+
+    &:hover {
+      @include tablet {
+        color: $color__accent-text--hover;
+      }
+    }
+
+    &:active {
+      @include tablet {
+        color: $color__accent-text--light;
+      }
+    }
   }
 }

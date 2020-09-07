@@ -1,14 +1,48 @@
 .button {
   font-family: inherit;
+  cursor: pointer;
   background-color: $color__primary;
   color: $color__primary-text;
   font-size: 100%;
+  font-weight: bold;
   padding: 0;
   margin: 0;
   border: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $color__primary--hover;
+  }
+
+  &:active {
+    background-color: $color__primary--darker;
+  }
+
+  &:disabled {
+    background-color: $color__neutral--hover;
+  }
 }
 
 .button:active .button-text {
   opacity: 0.3;
+}
+
+.button--close {
+  width: 180px;
+  height: 58px;
+
+  @include tablet {
+    margin-top: 28px;
+    width: 458px;
+  }
+}
+
+.button--ok {
+  width: 180px;
+  height: 58px;
+
+  @include tablet {
+    margin-bottom: 28px;
+    width: 458px;
+  }
 }

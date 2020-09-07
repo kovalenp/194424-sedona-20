@@ -36,19 +36,24 @@
 }
 
 .page-intro__background--min {
-  min-height: 160px;
-  background-position: center -215px;
+  min-height: 159px;
+  background-position: center -230px;
 
   @include tablet {
-    min-height: 300px;
-    background-position: center -215px;
+    min-height: 290px;
+    background-position: center -228px;
+  }
+
+  @include desktop {
+    min-height: 301px;
+    background-position: center -216px;
   }
 }
 
 .page-intro__logo {
   position: absolute;
   width: 282px;
-  top: 25%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%);
 
@@ -76,7 +81,7 @@
 
 .page-intro__mask {
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
 

@@ -2,8 +2,10 @@
 $color__neutral: #f2f2f2;
 $color__neutral--hover: #e5e5e5;
 $color__neutral--darker: #d5d5d5;
+$color__neutral--accent: #e6e6e6;
 
 $color__border: #d6d6d6;
+$color__decoration-line: #dbdbdb;
 
 // Палитра основных цветов
 $color__primary: #81b3d2;
@@ -26,3 +28,9 @@ $color__menu-text--light: rgba($color__menu-text, 0.3);
 $color__accent-text: #766357;
 $color__accent-text--hover: #604e43;
 $color__accent-text--light: rgba($color__accent-text, 0.3);
+
+// Палитра видео контролов
+$color__control__element: #5c6870;
+
+// Палитра ошибок
+$color__error: #ff0000;
